@@ -1,0 +1,76 @@
+[
+    {
+        "name": "screening_agent",
+        "description": "Runs a specialist screening agent on one specific angle of candidate fit. Call once per screening dimension with a focused question. Each call receives the full job posting and resume scoped to the partition.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "partition_agent": {
+                    "type": "string",
+                    "description": "The partition agent name this question belongs to (from the partitions JSON)"
+                },
+                "question": {
+                    "type": "string",
+                    "description": "The specific screening question to evaluate"
+                }
+            },
+            "required": ["partition_agent", "question"]
+        }
+    },
+    {
+        "name": "evaluate_coverage",
+        "description": "Evaluate whether the screening findings so far are sufficient to make a confident recommendation. Call this after all partition agents have reported. Returns a coverage score, list of gaps, and whether the coverage is sufficient.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "findings_summary": {
+                    "type": "string",
+                    "description": "A brief summary of all screening findings collected so far"
+                },
+                "coverage_score": {
+                    "type": "integer",
+                    "description": "Coverage score 1-10 (10 = fully covered, no gaps)"
+                },
+                "gaps": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "List of screening dimensions that still have unresolved uncertainty"
+                },
+                "sufficient": {
+                    "type": "boolean",
+                    "description": "True if coverage is sufficient to make a confident recommendation"
+                }
+            },
+            "required": ["findings_summary", "coverage_score", "gaps", "sufficient"]
+        }
+    },
+    {
+        "name": "submit_final",
+        "description": "Submit the final hiring recommendation. Call this ONLY after evaluate_coverage returns sufficient=true (or after gap-filling follow-ups). This is the only valid way to conclude the screening.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "verdict": {
+                    "type": "string",
+                    "enum": ["HIRE", "MAYBE", "PASS"],
+                    "description": "The hiring recommendation"
+                },
+                "rationale": {
+                    "type": "string",
+                    "description": "2-4 sentence rationale integrating all screening findings"
+                },
+                "key_strengths": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Top 2-3 candidate strengths"
+                },
+                "key_concerns": {
+                    "type": "array",
+                    "items": {"type": "string"},
+                    "description": "Top concerns or risks (empty list if none)"
+                }
+            },
+            "required": ["verdict", "rationale", "key_strengths", "key_concerns"]
+        }
+    }
+]
