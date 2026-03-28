@@ -1,0 +1,6 @@
+Alex Chen — 7 years experience
+2022–present: Backend Engineer, FinTech startup — Python, FastAPI, PostgreSQL, Docker
+2019–2022:    Software Engineer, SaaS company — Python, Django, MySQL
+2017–2019:    Junior Developer, agency — PHP, JavaScript
+Skills: Python, FastAPI, PostgreSQL, Docker, REST APIs, some Redis
+Education: B.Sc. Computer Science

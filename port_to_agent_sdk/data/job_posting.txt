@@ -1,0 +1,4 @@
+Title: Senior Python Backend Engineer
+Required skills: Python (5+ years), FastAPI, PostgreSQL, Docker, REST API design
+Nice to have: Kubernetes, Redis, system design at scale
+Seniority: Senior (5-8 years total experience)
