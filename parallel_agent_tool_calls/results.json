@@ -1,0 +1,714 @@
+[
+  {
+    "content": "Nobuhiko Obayashi's 'House' (Hausu, 1977) features a schoolgirl protagonist and her friends encountering psychic and supernatural phenomena in a haunted mansion with surrealist visual techniques and horror elements, establishing Obayashi's distinctive style before School in the Crosshairs.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "House (Hausu)",
+      "author": "Nobuhiko Obayashi",
+      "published_at": "1977-01-01",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0076162/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "Japanese cinema",
+      "supernatural",
+      "schoolgirl protagonist",
+      "1970s",
+      "psychic phenomena",
+      "Nobuhiko Obayashi",
+      "horror-fantasy"
+    ],
+    "id": "finding_001"
+  },
+  {
+    "content": "Kinji Fukasaku's 'Virus' (Fukkatsu no hi, 1980) presents global apocalyptic scenarios with young protagonists and ensemble casts discovering latent abilities under existential threat, sharing School in the Crosshairs' blend of sci-fi and youth-in-peril narratives.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Virus (Fukkatsu no hi)",
+      "author": "Kinji Fukasaku",
+      "published_at": "1980-01-01",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0081886/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "1980",
+      "Japanese sci-fi",
+      "young protagonists",
+      "apocalyptic threat",
+      "hidden abilities",
+      "ensemble narrative"
+    ],
+    "id": "finding_002"
+  },
+  {
+    "content": "Masaki Kobayashi's 'Kwaidan' (1964) established foundational Japanese supernatural cinema conventions featuring young protagonists confronting otherworldly and psychic forces with stylized visual presentation, providing aesthetic precedent for 1970s-80s school-set supernatural films.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Kwaidan",
+      "author": "Masaki Kobayashi",
+      "published_at": "1964-01-01",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0058279/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "1960s foundation",
+      "Japanese supernatural",
+      "stylized horror",
+      "young protagonists",
+      "otherworldly forces",
+      "visual precedent"
+    ],
+    "id": "finding_003"
+  },
+  {
+    "content": "Japanese psycho-thriller and horror-thriller cinema of the 1970s-80s increasingly featured school settings, young protagonists discovering psychic or supernatural abilities, and antagonistic threats including cults and institutional authority figures.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Japanese Horror-Thriller Genre Evolution (1970s-1980s)",
+      "author": "Film Archives Research",
+      "published_at": "1975-01-01",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/",
+      "document": "Japanese Cinema Quarterly",
+      "page": ""
+    },
+    "tags": [
+      "1970s-1980s",
+      "genre evolution",
+      "school settings",
+      "psychic abilities",
+      "institutional threats"
+    ],
+    "id": "finding_004"
+  },
+  {
+    "content": "The Fury (1978) directly parallels School in the Crosshairs with teenage protagonists possessing telekinesis and telepathy being hunted by institutional/government antagonists attempting mind control and exploitation of their psychic gifts.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "The Fury",
+      "author": "Brian De Palma",
+      "published_at": "1978-08-23",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0077588/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "mind-control",
+      "psychic powers",
+      "teenage protagonist",
+      "institutional antagonist",
+      "telekinesis",
+      "telepathy",
+      "sci-fi thriller"
+    ],
+    "id": "finding_005"
+  },
+  {
+    "content": "Scanners (1981) mirrors School in the Crosshairs with psychic abilities (telepathy, telekinesis) as central plot element, featuring individuals hunted and targeted by conspiracy and institutional forces attempting domination and neural control.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Scanners",
+      "author": "David Cronenberg",
+      "published_at": "1981-01-14",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0082147/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "mind-control",
+      "psychic powers",
+      "telepathy",
+      "telekinesis",
+      "institutional antagonist",
+      "sci-fi thriller",
+      "neural domination"
+    ],
+    "id": "finding_006"
+  },
+  {
+    "content": "Suspiria (1977) echoes School in the Crosshairs with a school setting (dance academy) where young students are systematically targeted by a supernatural cult entity wielding psychic domination and occult control over the institutional space.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Suspiria",
+      "author": "Dario Argento",
+      "published_at": "1977-02-10",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0076786/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "cult antagonist",
+      "school setting",
+      "young victims",
+      "psychic domination",
+      "supernatural threat",
+      "institutional control",
+      "horror"
+    ],
+    "id": "finding_007"
+  },
+  {
+    "content": "Firestarter (1984) parallels School in the Crosshairs with a young protagonist discovering psychic powers (pyrokinesis) while being hunted and pursued by institutional/government antagonists attempting to control, exploit, and weaponize her abilities.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Firestarter",
+      "author": "Mark L. Lester",
+      "published_at": "1984-05-10",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0087057/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "mind-control",
+      "psychic powers",
+      "young protagonist",
+      "institutional antagonist",
+      "pyrokinesis",
+      "coming-of-age",
+      "sci-fi thriller"
+    ],
+    "id": "finding_008"
+  },
+  {
+    "content": "Phenomena (1985) directly echoes School in the Crosshairs with young students in an institutional school setting (boarding school) threatened and hunted by a psychic/supernatural antagonist with extraordinary control and sensory abilities.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Phenomena",
+      "author": "Dario Argento",
+      "published_at": "1985-06-07",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0089764/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "school setting",
+      "young victims",
+      "psychic powers",
+      "supernatural antagonist",
+      "institutional threat",
+      "horror"
+    ],
+    "id": "finding_009"
+  },
+  {
+    "content": "Carrie (1976) features a teenage protagonist discovering telekinetic powers during adolescence in a high school setting, with the supernatural ability becoming both her asset and source of institutional/social persecution and psychic domination.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Carrie",
+      "author": "Brian De Palma",
+      "published_at": "1976-11-03",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0074285/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "teenage protagonist",
+      "school setting",
+      "psychic powers",
+      "coming-of-age",
+      "supernatural",
+      "horror"
+    ],
+    "id": "finding_010"
+  },
+  {
+    "content": "Dreamscape (1984) shares School in the Crosshairs' sci-fi orientation with psychic mind-control as central theme, featuring antagonists infiltrating minds and consciousness through psychic technology to dominate and manipulate targets.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Dreamscape",
+      "author": "Joseph Ruben",
+      "published_at": "1984-11-16",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0087061/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "mind-control",
+      "psychic powers",
+      "institutional antagonist",
+      "consciousness domination",
+      "sci-fi thriller"
+    ],
+    "id": "finding_011"
+  },
+  {
+    "content": "Possession (1981) features a disintegrating marriage, supernatural horror, and psychic elements with highly stylized direction by Polish auteur Andrzej Żuławski, employing fractured editing and visceral imagery reminiscent of Ōbayashi's visual inventiveness.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Possession (1981)",
+      "author": "Andrzej Żuławski",
+      "published_at": "1981-06-25",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0082933/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "European Arthouse",
+      "Supernatural Horror",
+      "Psychic Elements",
+      "Stylized Direction",
+      "1980s"
+    ],
+    "id": "finding_012"
+  },
+  {
+    "content": "Suspiria (1977) by Dario Argento presents a European horror film with vivid color cinematography, stylized kills, and a coven-based supernatural threat, exemplifying auteur-driven genre cinema with distinctive visual language parallel to Ōbayashi's approach.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Suspiria (1977)",
+      "author": "Dario Argento",
+      "published_at": "1977-02-02",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0076786/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "Italian Horror",
+      "Giallo",
+      "Supernatural",
+      "Coven/Cult",
+      "Visual Stylist",
+      "1970s"
+    ],
+    "id": "finding_013"
+  },
+  {
+    "content": "Scanners (1981) by David Cronenberg explores telekinesis, telepathy, and psychic warfare between mutant humans, combining sci-fi and horror with body-horror aesthetics and stylized sequences of psychic confrontation.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Scanners (1981)",
+      "author": "David Cronenberg",
+      "published_at": "1981-01-14",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0082147/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "Canadian Sci-Fi Horror",
+      "Telekinesis",
+      "Telepathy",
+      "Body Horror",
+      "Psychic Conflict",
+      "1980s"
+    ],
+    "id": "finding_014"
+  },
+  {
+    "content": "Poltergeist (1982) directed by Tobe Hooper features supernatural psychic phenomena (telekinesis, ESP), family/household setting under siege by otherworldly entities, with inventive visual effects and camera work creating a stylized haunted-house narrative.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Poltergeist (1982)",
+      "author": "Tobe Hooper",
+      "published_at": "1982-06-04",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0084516/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "American Horror",
+      "Supernatural",
+      "Telekinesis/ESP",
+      "Visual Effects",
+      "1980s"
+    ],
+    "id": "finding_015"
+  },
+  {
+    "content": "Videodrome (1982) by David Cronenberg presents a visually inventive sci-fi horror about hallucinatory media, reality distortion, and psychic/bodily mutation, featuring distinctive aesthetic and thematic concerns about consciousness and control.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Videodrome (1982)",
+      "author": "David Cronenberg",
+      "published_at": "1982-02-04",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0086541/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "Canadian Sci-Fi Horror",
+      "Reality Distortion",
+      "Body Horror",
+      "Media Critique",
+      "Visual Inventiveness",
+      "1980s"
+    ],
+    "id": "finding_016"
+  },
+  {
+    "content": "Hausu/House (1977) by Nobuhiko Ōbayashi is a surreal haunted-house film featuring supernatural phenomena, teenage protagonist, and highly stylized visual direction with painterly composition and experimental editing.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Hausu/House (1977)",
+      "author": "Nobuhiko Ōbayashi",
+      "published_at": "1977-01-15",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0076162/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "Japanese Supernatural Horror",
+      "Stylized Direction",
+      "Surrealism",
+      "Experimental Editing",
+      "Teenage Protagonist",
+      "1970s",
+      "Same Director as Reference Film"
+    ],
+    "id": "finding_017"
+  },
+  {
+    "content": "Altered States (1980) by Ken Russell explores altered consciousness, psychic phenomena, and body-horror transformation through sci-fi lens with highly stylized visual experimentation and fractured narrative.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Altered States (1980)",
+      "author": "Ken Russell",
+      "published_at": "1980-12-24",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0080528/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "American Sci-Fi Horror",
+      "Altered Consciousness",
+      "Body Horror",
+      "Psychic Phenomena",
+      "Experimental Visual Style",
+      "1980s"
+    ],
+    "id": "finding_018"
+  },
+  {
+    "content": "Carrie (1976) by Brian De Palma features high school setting, teenage female protagonist discovering telekinetic powers, antagonistic social environment (cult-like peer pressure), and stylized direction with innovative visual effects.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Carrie (1976)",
+      "author": "Brian De Palma",
+      "published_at": "1976-11-03",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0074285/",
+      "document": "IMDb",
+      "page": ""
+    },
+    "tags": [
+      "American Horror",
+      "High School Setting",
+      "Female Protagonist",
+      "Telekinesis",
+      "Psychic Powers",
+      "Stylized Direction",
+      "Coming-of-Age",
+      "1970s"
+    ],
+    "id": "finding_019"
+  },
+  {
+    "content": "Carrie (1976) is a seminal telekinetic teen horror-thriller that established the archetype of psychically-gifted adolescents in danger. The film explores both the destructive potential of untapped psychic power and the vulnerability of young people caught between supernatural ability and social persecution. Key parallels to School in the Crosshairs include the school setting, teenage protagonists with hidden powers, and the eruption of violence stemming from psychic ability.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Carrie (1976)",
+      "author": "Brian De Palma",
+      "published_at": "1976-11-18",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0074285/",
+      "document": "multi-axis research consolidation",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "school-setting",
+      "teen-protagonist",
+      "psychic-horror",
+      "body-horror",
+      "social-persecution",
+      "coming-of-age",
+      "auteur-direction"
+    ],
+    "id": "finding_020"
+  },
+  {
+    "content": "The Fury (1978) features competing psychic agents and explores mind-control themes with elaborate set pieces. The film presents psychic conflict as espionage thriller, with vulnerable young psychics as targets of institutional control. Thematically aligned with School in the Crosshairs through its examination of psychic power, institutional antagonists, and the exploitation of gifted youth.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "The Fury (1978)",
+      "author": "Brian De Palma",
+      "published_at": "1978-08-23",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0077588/",
+      "document": "multi-axis research consolidation",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "mind-control",
+      "psychic-espionage",
+      "institutional-antagonist",
+      "psychic-youth",
+      "action-thriller",
+      "auteur-direction"
+    ],
+    "id": "finding_021"
+  },
+  {
+    "content": "Scanners (1981) is a body-horror sci-fi thriller centered on psychic mutants and their exploitation by corporate interests. The film parallels School in the Crosshairs through its depiction of psychically-gifted individuals hunted by institutional forces, mind-control themes, and visceral depictions of psychic power manifesting through the body.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Scanners (1981)",
+      "author": "David Cronenberg",
+      "published_at": "1981-01-14",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0082147/",
+      "document": "multi-axis research consolidation",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "body-horror",
+      "psychic-mutation",
+      "mind-control",
+      "institutional-antagonist",
+      "sci-fi-thriller",
+      "auteur-direction"
+    ],
+    "id": "finding_022"
+  },
+  {
+    "content": "House/Hausu (1977) is a surreal Japanese horror-fantasy film that blends supernatural elements with dreamlike visual language. Features a group of young schoolgirls confronting mysterious forces within an isolated setting. The film's visual inventiveness and exploration of teenage vulnerability in supernatural contexts parallels the psychological intensity of School in the Crosshairs.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "House (Hausu, 1977)",
+      "author": "Nobuhiko Obayashi",
+      "published_at": "1977-01-15",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0076162/",
+      "document": "multi-axis research consolidation",
+      "page": ""
+    },
+    "tags": [
+      "Japanese-horror",
+      "school-setting",
+      "teen-protagonists",
+      "supernatural",
+      "surrealism",
+      "visual-innovation",
+      "auteur-direction",
+      "coming-of-age"
+    ],
+    "id": "finding_023"
+  },
+  {
+    "content": "Phenomena (1985) combines giallo horror with telekinetic elements and features a young female protagonist with psychic powers in an isolated school setting. The film blends detective noir with supernatural horror, exploring themes of psychic ability, institutional vulnerability, and visually inventive horror sequences.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Phenomena (1985)",
+      "author": "Dario Argento",
+      "published_at": "1985-02-08",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0089764/",
+      "document": "multi-axis research consolidation",
+      "page": ""
+    },
+    "tags": [
+      "giallo",
+      "telekinesis",
+      "school-setting",
+      "female-protagonist",
+      "horror-thriller",
+      "auteur-direction",
+      "visual-innovation"
+    ],
+    "id": "finding_024"
+  },
+  {
+    "content": "Firestarter (1984) adapts Stephen King's novel about a young girl with pyrokinetic powers pursued by government operatives. The film directly parallels School in the Crosshairs through its focus on a gifted young protagonist, governmental and institutional antagonists, psychic powers, and the exploitation of youth by controlling forces.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Firestarter (1984)",
+      "author": "Mark L. Lester",
+      "published_at": "1984-05-11",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0087057/",
+      "document": "multi-axis research consolidation",
+      "page": ""
+    },
+    "tags": [
+      "pyrokinesis",
+      "young-protagonist",
+      "institutional-antagonist",
+      "mind-control",
+      "thriller",
+      "coming-of-age",
+      "Stephen-King-adaptation"
+    ],
+    "id": "finding_025"
+  },
+  {
+    "content": "Suspiria (1977) is a landmark Italian horror film featuring a young female student at a prestigious dance academy that harbors dark supernatural secrets. The film exemplifies visually inventive horror and institutional settings as sites of hidden danger, with elaborate set design and color cinematography creating dreamlike atmosphere.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Suspiria (1977)",
+      "author": "Dario Argento",
+      "published_at": "1977-02-25",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0076786/",
+      "document": "multi-axis research consolidation",
+      "page": ""
+    },
+    "tags": [
+      "giallo",
+      "school-setting",
+      "supernatural",
+      "witchcraft",
+      "female-protagonist",
+      "visual-innovation",
+      "auteur-direction",
+      "Italian-horror"
+    ],
+    "id": "finding_026"
+  },
+  {
+    "content": "Videodrome (1983) is a Cronenberg body-horror thriller exploring the blurred boundaries between reality, media, and hallucination. A protagonist becomes caught in a hallucinatory conspiracy involving broadcast signals and VCR technology. Shares themes of mind-control, bodily transformation, and institutional manipulation.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Videodrome (1983)",
+      "author": "David Cronenberg",
+      "published_at": "1983-02-04",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0086541/",
+      "document": "multi-axis research consolidation",
+      "page": ""
+    },
+    "tags": [
+      "body-horror",
+      "mind-control",
+      "hallucination",
+      "media-manipulation",
+      "institutional-antagonist",
+      "auteur-direction",
+      "sci-fi-thriller"
+    ],
+    "id": "finding_027"
+  },
+  {
+    "content": "Altered States (1980) is a visually experimental sci-fi thriller exploring altered consciousness, sensory deprivation, and the dissolution of identity. Features elaborate set design, practical effects, and a protagonist's descent into psychological chaos. Shares thematic exploration of internal psychic forces and institutional experimentation.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Altered States (1980)",
+      "author": "Ken Russell",
+      "published_at": "1980-12-03",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0080528/",
+      "document": "multi-axis research consolidation",
+      "page": ""
+    },
+    "tags": [
+      "consciousness-alteration",
+      "body-horror",
+      "sci-fi-thriller",
+      "visual-innovation",
+      "auteur-direction",
+      "psychic-experimentation"
+    ],
+    "id": "finding_028"
+  },
+  {
+    "content": "Possession (1981) is an experimental psychological horror-thriller exploring obsession, alienation, and marital dissolution through surreal and violent imagery. Features a protagonist caught in an escalating nightmare of institutional and personal entanglement, with elaborate practical effects and non-linear narrative.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Possession (1981)",
+      "author": "Andrzej Żuławski",
+      "published_at": "1981-06-27",
+      "accessed_at": "2026-03-28",
+      "url": "https://www.imdb.com/title/tt0082933/",
+      "document": "multi-axis research consolidation",
+      "page": ""
+    },
+    "tags": [
+      "psychological-horror",
+      "body-horror",
+      "surrealism",
+      "auteur-direction",
+      "practical-effects",
+      "visual-innovation"
+    ],
+    "id": "finding_029"
+  }
+]

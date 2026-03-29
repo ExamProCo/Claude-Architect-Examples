@@ -1,0 +1,568 @@
+[
+  {
+    "content": "Katsuhiro Otomo's Akira (1988) features psychic/telekinetic powers in teenage protagonists set against a dystopian urban backdrop with government control elements, sharing supernatural ability discovery and youth-focused narrative with School in the Crosshairs.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Akira (1988)",
+      "author": "Katsuhiro Otomo",
+      "published_at": "1988-07-16",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "telekinesis",
+      "teenage protagonists",
+      "psychic powers",
+      "dystopian",
+      "government control",
+      "supernatural"
+    ],
+    "id": "finding_001"
+  },
+  {
+    "content": "Kinji Fukasaku's Virus (1980) combines science fiction with ensemble young cast and mass psychological phenomena in confined institutional setting, echoing the school environment and mind-control threat structure of Obayashi's film.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Virus (Fukasaku, 1980)",
+      "author": "Kinji Fukasaku",
+      "published_at": "1980-06-07",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "ensemble cast",
+      "psychological phenomena",
+      "institutional setting",
+      "survival narrative",
+      "science fiction"
+    ],
+    "id": "finding_002"
+  },
+  {
+    "content": "Nobuhiko Obayashi's Brother and Sister (1976) and Little Prince and the Eight-Faced Princess (1978) precede School in the Crosshairs and explore surrealist aesthetics with young protagonists and supernatural elements characteristic of his directorial signature.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Brother and Sister (1976) / Little Prince and the Eight-Faced Princess (1978)",
+      "author": "Nobuhiko Obayashi",
+      "published_at": "1976-01-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "surrealism",
+      "young protagonists",
+      "supernatural elements",
+      "stylized direction",
+      "Obayashi's oeuvre"
+    ],
+    "id": "finding_003"
+  },
+  {
+    "content": "Shuji Terayama's experimental films of the 1970s, particularly his surrealist approach to institutional critique and youth transformation, provided aesthetic precedent for Obayashi's visually inventive supernatural school drama.",
+    "confidence": "medium",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Shuji Terayama Films (1970s)",
+      "author": "Shuji Terayama",
+      "published_at": "1970-01-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "surrealism",
+      "experimental cinema",
+      "institutional critique",
+      "youth transformation",
+      "visual inventiveness"
+    ],
+    "id": "finding_004"
+  },
+  {
+    "content": "Carrie (1976) is the seminal American film establishing the template of a teenage female protagonist discovering destructive telekinetic powers triggered by adolescent trauma and social ostracization.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Carrie",
+      "author": "Brian De Palma",
+      "published_at": "1976-11-03",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "telekinesis",
+      "teenage_protagonist",
+      "female_lead",
+      "supernatural_horror",
+      "coming_of_age",
+      "cult_influence",
+      "religious_trauma"
+    ],
+    "id": "finding_005"
+  },
+  {
+    "content": "The Fury (1978) features a teenage boy with psychokinetic abilities pursued by a shadowy government organization, blending science fiction thriller elements with psychic espionage and teenage agency.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "The Fury",
+      "author": "Brian De Palma",
+      "published_at": "1978-08-23",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "telekinesis",
+      "teenage_male_protagonist",
+      "psychic_powers",
+      "government_conspiracy",
+      "thriller",
+      "sci_fi"
+    ],
+    "id": "finding_006"
+  },
+  {
+    "content": "Scanners (1981) explores ESP and psychic mind-control in a Canadian science fiction thriller centered on individuals with telepathic and telekinetic abilities engaged in corporate espionage.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Scanners",
+      "author": "David Cronenberg",
+      "published_at": "1981-01-14",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "telepathy",
+      "telekinesis",
+      "psychic_powers",
+      "mind_control",
+      "sci_fi_thriller",
+      "corporate_antagonist"
+    ],
+    "id": "finding_007"
+  },
+  {
+    "content": "Firestarter (1984) adapts Stephen King's novel about a young girl with pyrokinetic powers (a telekinetic variant) fleeing government agents, epitomizing the 1980s child-with-powers-versus-authority narrative.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Firestarter",
+      "author": "Mark L. Lester",
+      "published_at": "1984-05-11",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "psychokinesis",
+      "young_protagonist",
+      "pyrokinesis",
+      "government_conspiracy",
+      "stephen_king",
+      "child_protagonist"
+    ],
+    "id": "finding_008"
+  },
+  {
+    "content": "Phenomena (1985) is an Italian giallo horror film where a teenage girl with psychic sensitivity to insects becomes entangled in a murder mystery, blending giallo conventions with psychic youth protagonist.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Phenomena",
+      "author": "Dario Argento",
+      "published_at": "1985-02-09",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "teenage_female_protagonist",
+      "psychic_sensitivity",
+      "giallo",
+      "murder_mystery",
+      "italian_horror"
+    ],
+    "id": "finding_009"
+  },
+  {
+    "content": "Scanners (1981, David Cronenberg) features telepathic psychics with mind-control abilities as protagonists and antagonists in a sci-fi thriller about ESP powers and corporate conspiracy, directly paralleling the psychic powers and antagonistic control themes in School in the Crosshairs.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Scanners",
+      "author": "David Cronenberg",
+      "published_at": "1981-01-14",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "telepathy",
+      "mind-control",
+      "ESP",
+      "psychic-powers",
+      "sci-fi-thriller",
+      "1981"
+    ],
+    "id": "finding_010"
+  },
+  {
+    "content": "The Brood (1979, David Cronenberg) features a cult-like therapeutic community with psychological manipulation and mind-control elements where the protagonist's psychic abilities manifest through violence, blending psychological thriller with supernatural horror.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "The Brood",
+      "author": "David Cronenberg",
+      "published_at": "1979-08-17",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "cult",
+      "mind-control",
+      "psychological-manipulation",
+      "psychic-powers",
+      "horror",
+      "1979"
+    ],
+    "id": "finding_011"
+  },
+  {
+    "content": "Carrie (1976, Brian De Palma) features a teenage protagonist discovering telekinetic powers in a school setting with cult-like religious antagonism and psychological manipulation, paralleling the coming-of-age supernatural thriller structure of School in the Crosshairs.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Carrie",
+      "author": "Brian De Palma",
+      "published_at": "1976-11-03",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "telekinesis",
+      "school-setting",
+      "teenage-protagonist",
+      "psychic-powers",
+      "horror",
+      "1976"
+    ],
+    "id": "finding_012"
+  },
+  {
+    "content": "Suspiria (1977, Dario Argento) features a young female protagonist entering a prestigious institution controlled by a cult of witches who use psychological manipulation and supernatural powers, blending coming-of-age horror with cult antagonism.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Suspiria",
+      "author": "Dario Argento",
+      "published_at": "1977-02-25",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "cult-antagonist",
+      "psychological-horror",
+      "supernatural",
+      "school-setting",
+      "female-protagonist",
+      "1977"
+    ],
+    "id": "finding_013"
+  },
+  {
+    "content": "Invasion of the Body Snatchers (1978, Philip Kaufman) depicts psychological manipulation and loss of individual identity through alien mind-control, featuring paranoia and collective consciousness themes.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Invasion of the Body Snatchers",
+      "author": "Philip Kaufman",
+      "published_at": "1978-12-22",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "mind-control",
+      "collective-consciousness",
+      "psychological-thriller",
+      "sci-fi",
+      "1978"
+    ],
+    "id": "finding_014"
+  },
+  {
+    "content": "Dreamscape (1984, Joseph Ruben) features psychic individuals with telepathic and mind-control abilities used in espionage, blending sci-fi thriller with psychological manipulation of consciousness.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "name": "Dreamscape",
+      "author": "Joseph Ruben",
+      "published_at": "1984-11-16",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "telepathy",
+      "psychic-powers",
+      "mind-control",
+      "consciousness-manipulation",
+      "sci-fi-thriller",
+      "1984"
+    ],
+    "id": "finding_015"
+  },
+  {
+    "content": "Carrie (1976) - American horror-thriller where a teenage girl with telekinetic powers must survive her high school prom while suppressed rage and supernatural ability converge, blending adolescent drama with horror spectacle.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Carrie",
+      "author": "Brian De Palma",
+      "published_at": "1976-11-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "American cinema",
+      "telekinesis",
+      "high school setting",
+      "coming-of-age",
+      "horror",
+      "1970s",
+      "adolescent protagonist"
+    ],
+    "id": "finding_016"
+  },
+  {
+    "content": "Friday the 13th (1980) - American horror-thriller about teenage girls facing a masked slasher at a summer camp, establishing the slasher formula while exploring adolescent vulnerability and survival.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Friday the 13th",
+      "author": "Sean S. Cunningham",
+      "published_at": "1980-05-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "American cinema",
+      "slasher horror",
+      "coming-of-age",
+      "teenage protagonists",
+      "1980s",
+      "survival thriller"
+    ],
+    "id": "finding_017"
+  },
+  {
+    "content": "Poltergeist (1982) - American supernatural thriller where a teenage boy must survive a night confronting supernatural evil and his own family's dark secrets, blending adolescent isolation with horror.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Poltergeist",
+      "author": "Tobe Hooper",
+      "published_at": "1982-06-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "American cinema",
+      "supernatural horror",
+      "family drama",
+      "coming-of-age",
+      "1980s",
+      "psychic phenomena"
+    ],
+    "id": "finding_018"
+  },
+  {
+    "content": "Firestarter (1984) - American science fiction thriller where a teenage girl develops psychic powers and must evade government agents hunting her abilities, blending coming-of-age with paranoid sci-fi thriller.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Firestarter",
+      "author": "Mark L. Lester",
+      "published_at": "1984-05-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "American cinema",
+      "science fiction",
+      "psychic powers",
+      "coming-of-age",
+      "government conspiracy",
+      "1980s"
+    ],
+    "id": "finding_019"
+  },
+  {
+    "content": "A Nightmare on Elm Street (1984) - American horror-thriller where teenagers must survive a night encountering a supernatural presence, blending slasher horror with coming-of-age vulnerability and paranormal elements.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "A Nightmare on Elm Street",
+      "author": "Wes Craven",
+      "published_at": "1984-11-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "American cinema",
+      "horror",
+      "slasher",
+      "supernatural",
+      "coming-of-age",
+      "1980s",
+      "dream horror"
+    ],
+    "id": "finding_020"
+  },
+  {
+    "content": "Suspiria (1977) - Italian horror where a teenage girl discovers her connection to an institution and its violent supernatural forces, blending coming-of-age mystery with witchcraft and cult antagonism.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Suspiria",
+      "author": "Dario Argento",
+      "published_at": "1977-02-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "Italian cinema",
+      "giallo",
+      "supernatural horror",
+      "witchcraft",
+      "boarding school",
+      "coming-of-age",
+      "1970s"
+    ],
+    "id": "finding_021"
+  },
+  {
+    "content": "Dario Argento pioneered giallo-horror hybrids with elaborate tracking shots, primary color cinematography, and supernatural elements in Suspiria (1977), Inferno (1980), Tenebre (1982), establishing visual language that influenced psychic-thriller aesthetics.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Suspiria (1977), Inferno (1980), Tenebre (1982)",
+      "author": "Dario Argento",
+      "published_at": "1977-01-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "Italian",
+      "supernatural",
+      "visual_innovation",
+      "color_cinematography",
+      "tracking_shots",
+      "giallo"
+    ],
+    "id": "finding_022"
+  },
+  {
+    "content": "David Cronenberg developed visceral body-horror aesthetic with meticulous framing and practical effects in Scanners (1981), directly exploring psychic/telepathic violence through innovative visual metaphors of corporeal transformation.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Scanners (1981), The Dead Zone (1983), Videodrome (1983)",
+      "author": "David Cronenberg",
+      "published_at": "1981-01-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "Canadian",
+      "psychic_powers",
+      "body_horror",
+      "sci-fi",
+      "practical_effects",
+      "ESP"
+    ],
+    "id": "finding_023"
+  },
+  {
+    "content": "John Carpenter established signature visual language in The Fog (1980) and The Thing (1982) combining practical effects, wide compositions, and electronic scores to create supernatural/sci-fi dread.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "The Fog (1980), The Thing (1982), Halloween (1978)",
+      "author": "John Carpenter",
+      "published_at": "1978-01-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "American",
+      "supernatural",
+      "sci-fi",
+      "practical_effects",
+      "electronic_score",
+      "visual_language"
+    ],
+    "id": "finding_024"
+  },
+  {
+    "content": "Lucio Fulci blended supernatural horror with sci-fi in The Beyond (1981) and City of the Living Dead (1980), using non-linear editing and visual ambiguity to convey otherworldly/psychic dimensions.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "The Beyond (1981), City of the Living Dead (1980)",
+      "author": "Lucio Fulci",
+      "published_at": "1980-01-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "Italian",
+      "supernatural",
+      "horror",
+      "visual_ambiguity",
+      "non-linear_editing"
+    ],
+    "id": "finding_025"
+  },
+  {
+    "content": "Nobuhiko Obayashi pioneered hyper-stylized supernatural cinema in House (1977) and School in the Crosshairs (1981), combining pop aesthetics, rapid editing, optical effects, and non-realistic color grading.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "House (1977), School in the Crosshairs (1981)",
+      "author": "Nobuhiko Obayashi",
+      "published_at": "1977-01-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "Japanese",
+      "supernatural",
+      "psychic",
+      "pop_aesthetics",
+      "optical_effects",
+      "rapid_editing",
+      "color_innovation"
+    ],
+    "id": "finding_026"
+  },
+  {
+    "content": "David Lynch established surreal visual language with disorienting narrative, dreamlike color palette, and sound design in Eraserhead (1977) and The Elephant Man (1980), influencing supernatural narrative structure.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "name": "Eraserhead (1977), The Elephant Man (1980), Blue Velvet (1986)",
+      "author": "David Lynch",
+      "published_at": "1977-01-01",
+      "accessed_at": "2026-03-28"
+    },
+    "tags": [
+      "American",
+      "surreal",
+      "psychological",
+      "dreamlike",
+      "sound_design",
+      "color_palette"
+    ],
+    "id": "finding_027"
+  }
+]

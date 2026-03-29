@@ -1,0 +1,1555 @@
+[
+  {
+    "film": "Carrie (1976)",
+    "director": "Brian De Palma",
+    "content": "Teenage female protagonist (Carrie White, age 17) discovers telekinetic powers in high school setting; faces institutional antagonism from peers and authority figures; established the template for supernatural coming-of-age stories that influenced films like School in the Crosshairs",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Carrie_(1976_film)",
+      "excerpt": "Carrie is a 1976 American supernatural horror film directed by Brian De Palma, based on Stephen King's 1974 novel of the same name. It stars Sissy Spacek as Carrie White, a bullied teenage girl who discovers she has telekinetic powers.",
+      "published_at": "1976-11-03",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "teenage-protagonist",
+      "high-school-setting",
+      "supernatural-coming-of-age",
+      "institutional-antagonism",
+      "template-film",
+      "USA"
+    ],
+    "id": "finding_001"
+  },
+  {
+    "film": "The Fury (1978)",
+    "director": "Brian De Palma",
+    "content": "Features young psychic protagonists (Robin and Gillian) with telekinetic abilities in institutional/educational settings; explores government/corporate control of psychic powers and coming-of-age themes within supernatural framework, paralleling the institutional control theme in School in the Crosshairs",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Fury_(1978_film)",
+      "excerpt": "The Fury is a 1978 American science fiction thriller film written and directed by Brian De Palma. It centers on a young man named Robin with psychokinetic powers who is kidnapped by a secret government organization seeking to control his abilities, with a parallel narrative involving a young woman named Gillian.",
+      "published_at": "1978-09-22",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "young-protagonist",
+      "institutional-control",
+      "government-antagonist",
+      "psychic-powers",
+      "coming-of-age",
+      "USA"
+    ],
+    "id": "finding_002"
+  },
+  {
+    "film": "Scanners (1981)",
+    "director": "David Cronenberg",
+    "content": "Features protagonists with ESP/telepathy and psychokinetic abilities in conflict with institutional/corporate antagonists; explores mind-control and psychic ability themes similar to School in the Crosshairs, with cult-like institutional control of psychic powers in Canadian science fiction thriller",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Scanners_(1981_film)",
+      "excerpt": "Scanners is a 1981 science fiction film directed by David Cronenberg. It centers on a group of psychics (called 'scanners') with telepathic and telekinetic abilities who are exploited by a powerful corporation through mind-control technology.",
+      "published_at": "1981-01-14",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telepathy",
+      "telekinesis",
+      "institutional-control",
+      "corporate-antagonist",
+      "psychic-powers",
+      "mind-control",
+      "Canada",
+      "1981"
+    ],
+    "id": "finding_003"
+  },
+  {
+    "film": "Zapped! (1982)",
+    "director": "Robert J. Rosenthal",
+    "content": "Teenage protagonist (Barney Springboro) discovers telekinetic powers while in high school setting; blends comedy with supernatural discovery narrative; features institutional school environment, peer relationships, and power discovery arc similar to School in the Crosshairs",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zapped!_(1982_film)",
+      "excerpt": "Zapped! is a 1982 American comedy film directed by Robert J. Rosenthal, starring Scott Baio as a high school student who develops telekinetic powers after being exposed to experimental chemicals.",
+      "published_at": "1982-04-09",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "teenage-protagonist",
+      "high-school-setting",
+      "coming-of-age",
+      "discovery-of-powers",
+      "institutional-setting",
+      "USA"
+    ],
+    "id": "finding_004"
+  },
+  {
+    "film": "Firestarter (1984)",
+    "director": "Mark L. Lester",
+    "content": "Young protagonist (Charlie McGee, age ~8-10) with pyrokinetic/telekinetic powers pursued by government/institutional antagonist; blends supernatural thriller with coming-of-age elements and institutional control themes paralleling the cult antagonist in School in the Crosshairs",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Firestarter_(1984_film)",
+      "excerpt": "Firestarter is a 1984 American science fiction thriller film directed by Mark L. Lester, based on Stephen King's 1980 novel of the same name. It stars Drew Barrymore as Charlie McGee, a young girl with pyrokinetic powers who is pursued by a government agency called The Shop.",
+      "published_at": "1984-05-11",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "pyrokinesis",
+      "young-protagonist",
+      "institutional-control",
+      "government-antagonist",
+      "supernatural-thriller",
+      "coming-of-age",
+      "USA"
+    ],
+    "id": "finding_005"
+  },
+  {
+    "film": "Poltergeist (1982)",
+    "director": "Tobe Hooper",
+    "content": "Features young protagonist (Carol Anne Freeling) with supernatural sensitivity and psychic connection to paranormal forces; institutional investigation of supernatural phenomena; combines horror with coming-of-age elements and institutional authority figures similar to School in the Crosshairs",
+    "confidence": "medium",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Poltergeist_(1982_film)",
+      "excerpt": "Poltergeist is a 1982 American supernatural horror film directed by Tobe Hooper. It follows the Freeling family whose young daughter Carol Anne has a psychic connection to the paranormal forces haunting their home, and features investigators attempting to understand her supernatural abilities.",
+      "published_at": "1982-06-04",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "supernatural-sensitivity",
+      "psychic-connection",
+      "young-protagonist",
+      "institutional-investigation",
+      "horror",
+      "coming-of-age",
+      "USA"
+    ],
+    "id": "finding_006"
+  },
+  {
+    "film": "Suspiria (1977)",
+    "director": "Dario Argento",
+    "content": "Italian horror film featuring young female protagonist (Suzy Bannion, age ~20) discovering supernatural mysteries within exclusive arts academy; institutional setting with horror elements and coming-of-age narrative; European giallo approach to institutional supernatural threats similar to School in the Crosshairs",
+    "confidence": "medium",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Suspiria_(1977_film)",
+      "excerpt": "Suspiria is a 1977 Italian horror film directed by Dario Argento. It follows Suzy Bannion, a young American ballet student who enrolls at an exclusive German dance academy and discovers dark supernatural secrets controlled by a coven of witches.",
+      "published_at": "1977-02-04",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "supernatural",
+      "young-protagonist",
+      "institutional-setting",
+      "coming-of-age",
+      "giallo-horror",
+      "international-cinema",
+      "Italy"
+    ],
+    "id": "finding_007"
+  },
+  {
+    "film": "The Dead Zone (1983)",
+    "director": "David Cronenberg",
+    "content": "Features protagonist (Johnny Smith) awakening to precognitive and ESP abilities after institutional hospitalization; explores supernatural power discovery and institutional/governmental themes; Cronenberg's exploration of psychic abilities parallels the ESP and precognition elements in School in the Crosshairs",
+    "confidence": "medium",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Dead_Zone_(1983_film)",
+      "excerpt": "The Dead Zone is a 1983 science fiction thriller directed by David Cronenberg, based on Stephen King's 1979 novel. It stars Christopher Walken as Johnny Smith, a man who awakens from a coma with precognitive and clairvoyant abilities.",
+      "published_at": "1983-10-21",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "precognition",
+      "ESP",
+      "clairvoyance",
+      "young-adult-protagonist",
+      "institutional-setting",
+      "supernatural-thriller",
+      "Cronenberg"
+    ],
+    "id": "finding_008"
+  },
+  {
+    "film": "Carrie (1976)",
+    "director": "Brian De Palma",
+    "content": "High school girl discovers telekinetic powers while contending with repressive institutional and peer-based antagonists in a coming-of-age supernatural thriller",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Wikipedia",
+      "url": "https://www.imdb.com/title/tt0074285/",
+      "excerpt": "A teenage girl with psychokinetic powers inadvertently kills her classmates. She must learn to control her newfound psychic ability before she hurts herself and the people around her.",
+      "published_at": "1976-11-03",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "psychic-powers",
+      "telekinesis",
+      "high-school",
+      "teenage-protagonist",
+      "coming-of-age",
+      "institutional-antagonism",
+      "supernatural-thriller",
+      "1970s-horror"
+    ],
+    "id": "finding_009"
+  },
+  {
+    "film": "The Fury (1978)",
+    "director": "Brian De Palma",
+    "content": "Supernatural thriller featuring two psychically gifted teenagers hunted by a secret government organization, directly mirroring School in the Crosshairs' combination of ESP powers, teenage protagonists, and antagonistic control organizations.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0077588/",
+      "excerpt": "A man with psychic powers is forced into hiding by the government, who want to exploit his abilities. When his son is kidnapped by a sinister institute, he must rescue him while uncovering the truth about a young girl with even greater psychic powers.",
+      "published_at": "1978-09-22",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "psychic-powers",
+      "telekinesis",
+      "teenage-protagonists",
+      "government-antagonist",
+      "mind-control",
+      "supernatural-thriller",
+      "coming-of-age"
+    ],
+    "id": "finding_010"
+  },
+  {
+    "film": "Firestarter (1984)",
+    "director": "Mark L. Lester",
+    "content": "Young protagonist with pyrokinetic ESP powers flees from government agents seeking to control and exploit her abilities, echoing School in the Crosshairs' themes of adolescent empowerment against institutional control.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Stephen King filmography",
+      "url": "https://www.imdb.com/title/tt0087057/",
+      "excerpt": "A girl with extraordinary pyrokinetic powers is hunted by a secret government agency and its operatives who want to use her for destructive purposes.",
+      "published_at": "1984-05-11",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "psychokinesis",
+      "telekinesis",
+      "fire-powers",
+      "teenage-protagonist",
+      "government-control",
+      "cult-antagonist",
+      "institutional-evil",
+      "mind-control",
+      "psychological-manipulation",
+      "sci-fi-thriller"
+    ],
+    "id": "finding_011"
+  },
+  {
+    "film": "Akira (1987)",
+    "director": "Katsuhiro Otomo",
+    "content": "Anime featuring teenage protagonist Tetsuo discovering telekinetic powers within a militarized city-state, combining coming-of-age identity crisis with sci-fi horror spectacle and institutional threat, parallel to School in the Crosshairs' stylized visual approach.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Akira_(1988_film)",
+      "excerpt": "Akira follows Tetsuo Shima, a teenage member of a motorcycle gang who discovers he possesses incredible telekinetic powers. The film explores his transformation and the militaristic government's attempts to control him.",
+      "published_at": "1987-07-16",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "teenage-protagonist",
+      "dystopian-sci-fi",
+      "power-discovery",
+      "anime",
+      "military-antagonist",
+      "visual-innovation"
+    ],
+    "id": "finding_012"
+  },
+  {
+    "film": "The Lost Boys (1987)",
+    "director": "Joel Schumacher",
+    "content": "Teenage brothers confront a vampire cult in a California town, navigating adolescent identity and belonging through supernatural horror with cult-like social structures, echoing School in the Crosshairs' cult antagonist elements.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Lost_Boys",
+      "excerpt": "The Lost Boys follows two teenage brothers who move to a coastal California town and discover a community of vampires operating as a cult-like family structure, exploring themes of adolescent identity.",
+      "published_at": "1987-07-31",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "teenage-protagonists",
+      "vampire-horror",
+      "cult-structure",
+      "supernatural-threat",
+      "coming-of-age",
+      "identity-exploration"
+    ],
+    "id": "finding_013"
+  },
+  {
+    "film": "Fright Night (1985)",
+    "director": "Tom Holland",
+    "content": "Teenage horror enthusiast discovers his neighbor is a genuine vampire and must overcome his fears to survive, merging adolescent maturation with supernatural horror action and protagonist empowerment.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fright_Night_(1985_film)",
+      "excerpt": "Fright Night follows Charley Brewster, a teenage boy who is fascinated by horror films and discovers that his seemingly normal neighbor is actually a vampire. He must use his knowledge and courage to combat the supernatural threat.",
+      "published_at": "1985-08-02",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "teenage-protagonist",
+      "vampire-horror",
+      "supernatural-threat",
+      "coming-of-age",
+      "courage-discovery",
+      "genre-literacy"
+    ],
+    "id": "finding_014"
+  },
+  {
+    "film": "Society (1989)",
+    "director": "Brian Yuzna",
+    "content": "Teenage boy uncovers a horrifying body-horror conspiracy among the privileged elite, exploring adolescent alienation and identity fragmentation through grotesque sci-fi horror spectacle.",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Society_(1989_film)",
+      "excerpt": "Society follows Billy Warlock, a teenage boy from a privileged background who becomes increasingly convinced that his family and their social circle are hiding a horrific biological secret. The film climaxes with grotesque body-horror revelations.",
+      "published_at": "1989-04-07",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "teenage-protagonist",
+      "body-horror",
+      "sci-fi-thriller",
+      "alienation-theme",
+      "coming-of-age",
+      "identity-crisis",
+      "grotesque-spectacle"
+    ],
+    "id": "finding_015"
+  },
+  {
+    "film": "The Gate (1987)",
+    "director": "Tibor Takacs",
+    "content": "Young teenagers accidentally open a supernatural gateway, facing demonic forces and forced maturation through horror spectacle, combining coming-of-age vulnerability with genre action.",
+    "confidence": "medium",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Gate_(1987_film)",
+      "excerpt": "The Gate follows two teenagers who accidentally open a mystical gate in their backyard, releasing demonic entities. They must overcome their fears and work together to seal the gate before the creatures destroy their neighborhood.",
+      "published_at": "1987-05-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "teenage-protagonists",
+      "supernatural-horror",
+      "accidental-power-discovery",
+      "demonic-threat",
+      "coming-of-age",
+      "adventure"
+    ],
+    "id": "finding_016"
+  },
+  {
+    "film": "Christine (1983)",
+    "director": "John Carpenter",
+    "content": "Teenage outsider becomes obsessed with a sentient, supernatural car that corrupts his identity and morality, merging coming-of-age vulnerability with possession horror.",
+    "confidence": "medium",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Christine_(1983_film)",
+      "excerpt": "Christine centers on Arnie Cunningham, a lonely teenage outsider who becomes obsessed with a 1958 Plymouth Fury that appears to be sentient and malevolent. The car's influence transforms him morally and physically.",
+      "published_at": "1983-12-09",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "teenage-protagonist",
+      "supernatural-possession",
+      "obsession",
+      "coming-of-age",
+      "corruption-theme",
+      "horror"
+    ],
+    "id": "finding_017"
+  },
+  {
+    "film": "Carrie (1976)",
+    "director": "Brian De Palma",
+    "content": "High school girl discovers telekinetic powers while contending with repressive institutional and peer-based antagonists in a coming-of-age supernatural thriller",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Wikipedia",
+      "url": "https://www.imdb.com/title/tt0074285/",
+      "excerpt": "A teenage girl with psychokinetic powers inadvertently kills her classmates. She must learn to control her newfound psychic ability before she hurts herself and the people around her.",
+      "published_at": "1976-11-03",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "psychic-powers",
+      "telekinesis",
+      "high-school",
+      "teenage-protagonist",
+      "coming-of-age",
+      "institutional-antagonism",
+      "supernatural-thriller"
+    ],
+    "id": "finding_018"
+  },
+  {
+    "film": "The Fury (1978)",
+    "director": "Brian De Palma",
+    "content": "Teenage girl with telepathic and psychokinetic abilities is hunted by a government institute attempting to exploit and control her ESP powers through institutional manipulation",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0077588/",
+      "excerpt": "A man with psychic powers is forced into hiding by the government, who want to exploit his abilities. When his son is kidnapped by a sinister institute, he must rescue him while uncovering the truth about a young girl with even greater psychic powers.",
+      "published_at": "1978-09-22",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telepathy",
+      "psychokinesis",
+      "ESP",
+      "teenage-protagonist",
+      "government-control",
+      "institutional-antagonism",
+      "mind-control",
+      "sci-fi-thriller"
+    ],
+    "id": "finding_019"
+  },
+  {
+    "film": "Firestarter (1984)",
+    "director": "Mark L. Lester",
+    "content": "Teenage girl with pyrokinetic powers evades capture by THE SHOP, a secret government organization and cult-like antagonist attempting to control her extraordinary abilities through psychological manipulation",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Stephen King filmography",
+      "url": "https://www.imdb.com/title/tt0087057/",
+      "excerpt": "A girl with extraordinary pyrokinetic powers is hunted by a secret government agency and its operatives who want to use her for destructive purposes.",
+      "published_at": "1984-05-11",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "psychokinesis",
+      "telekinesis",
+      "fire-powers",
+      "teenage-protagonist",
+      "government-control",
+      "cult-antagonist",
+      "institutional-evil",
+      "mind-control",
+      "psychological-manipulation",
+      "sci-fi-thriller"
+    ],
+    "id": "finding_020"
+  },
+  {
+    "film": "Suspiria (1977)",
+    "director": "Dario Argento",
+    "content": "Young female students at an exclusive art academy discover the school is controlled by a supernatural witch coven exercising cult-like control over the institution through occult indoctrination and psychological terror",
+    "confidence": "high",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0076247/",
+      "excerpt": "A young dancer arrives at a prestigious ballet academy and soon discovers that the school is controlled by a secret coven of witches who use mind control and supernatural forces to manipulate the students.",
+      "published_at": "1977-02-23",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "school-setting",
+      "cult-control",
+      "supernatural-antagonism",
+      "occult-evil",
+      "young-protagonists",
+      "institutional-control",
+      "psychological-terror",
+      "stylized-direction",
+      "horror-thriller",
+      "mind-control"
+    ],
+    "id": "finding_021"
+  },
+  {
+    "film": "Scanners (1981)",
+    "director": "David Cronenberg",
+    "content": "Protagonist discovers and develops psychic abilities (scanning/telepathy) while uncovering a corporate conspiracy to exploit and control individuals with ESP powers through institutional means",
+    "confidence": "medium",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0081455/",
+      "excerpt": "A man with psychic powers is enlisted by a secret government agency to stop a rogue scanner from taking control of the world through a conspiracy to use scanners for mind control.",
+      "published_at": "1980-04-14",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telepathy",
+      "ESP",
+      "psychic-powers",
+      "institutional-control",
+      "corporate-conspiracy",
+      "mind-control",
+      "sci-fi-thriller",
+      "psychological-manipulation",
+      "ability-discovery"
+    ],
+    "id": "finding_022"
+  },
+  {
+    "film": "Videodrome (1982)",
+    "director": "David Cronenberg",
+    "content": "Television executive becomes victim of a cult-like broadcasting conspiracy that uses media to indoctrinate and control human consciousness through psychological manipulation and reality distortion",
+    "confidence": "medium",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0086541/",
+      "excerpt": "A cable television programmer and his girlfriend discover a mysterious broadcast called Videodrome which shows extreme violence. They become entangled in a conspiracy involving media, mind control, and reality manipulation.",
+      "published_at": "1982-02-04",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "mind-control",
+      "cult-conspiracy",
+      "psychological-indoctrination",
+      "institutional-evil",
+      "media-manipulation",
+      "sci-fi-horror",
+      "consciousness-control",
+      "stylized-direction",
+      "experimental-cinema"
+    ],
+    "id": "finding_023"
+  },
+  {
+    "film": "Phantasm II (1988)",
+    "director": "Don Coscarelli",
+    "content": "Young protagonists battle The Tall Man, a cult-like supernatural antagonist who controls victims through occult means and exercises institutional evil through his funeral home operations",
+    "confidence": "medium",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Horror film archives",
+      "url": "https://www.imdb.com/title/tt0095957/",
+      "excerpt": "Two brothers attempt to stop the Tall Man, a supernatural being who controls an army of the dead and uses occult powers to manipulate and possess victims through his dark institutional operations.",
+      "published_at": "1988-07-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "cult-antagonist",
+      "supernatural-control",
+      "occult-powers",
+      "institutional-evil",
+      "young-protagonists",
+      "psychological-manipulation",
+      "horror-thriller",
+      "possession-control",
+      "mind-control"
+    ],
+    "id": "finding_024"
+  },
+  {
+    "film": "Phantasm (1979)",
+    "director": "Don Coscarelli",
+    "content": "Young boy and his brother encounter The Tall Man, a supernatural antagonist running a funeral home as cover for occult operations involving mind control and institutional manipulation of the dead and living",
+    "confidence": "medium",
+    "type": "summary",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb/Cult film archives",
+      "url": "https://www.imdb.com/title/tt0079506/",
+      "excerpt": "A young boy learns that the tall mortician at the local cemetery is actually a supernatural being from another dimension who can possess the dead and manipulate the living through occult control.",
+      "published_at": "1979-03-30",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "cult-antagonist",
+      "supernatural-control",
+      "occult-evil",
+      "institutional-setting",
+      "young-protagonists",
+      "mind-control",
+      "possession",
+      "horror-thriller",
+      "psychological-manipulation"
+    ],
+    "id": "finding_025"
+  },
+  {
+    "film": "Suspiria (1977)",
+    "director": "Dario Argento",
+    "content": "Italian giallo-horror masterpiece featuring a young woman discovering supernatural powers within an elite dance academy with cult-like control structures, employing extreme visual stylization with vivid color cinematography, surrealist set design, and innovative editing that creates heightened aesthetic of otherworldly menace",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0076999/",
+      "excerpt": "Suspiria follows a young American ballet student who enrolls at a prestigious German dance academy, only to discover it is a front for a secret coven of witches. Argento's direction is marked by intense use of primary colors, dreamlike cinematography, and innovative visual compositions that create a heightened aesthetic reality.",
+      "published_at": "1977-02-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "supernatural-powers",
+      "young-protagonist",
+      "cult-control",
+      "visual-innovation",
+      "surrealism",
+      "color-cinematography",
+      "giallo-horror",
+      "school-setting"
+    ],
+    "id": "finding_026"
+  },
+  {
+    "film": "Scanners (1980)",
+    "director": "David Cronenberg",
+    "content": "Canadian sci-fi thriller featuring protagonists with psychic/telepathic/psychokinetic powers discovering hidden abilities through conflict with corporate mind-control forces, employing Cronenberg's signature visual approach to depicting invisible psychic powers through practical effects and body-horror imagery",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0081455/",
+      "excerpt": "Scanners features protagonists with telepathic and psychokinetic powers discovering their abilities while navigating conflict with corporate mind-control conspiracies. Cronenberg visualizes invisible psychic phenomena through innovative practical effects, body-horror imagery, and experimental visual composition.",
+      "published_at": "1980-01-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "ESP-telepathy-psychokinesis",
+      "sci-fi-thriller",
+      "mind-control-conspiracy",
+      "young-protagonists-discovering-powers",
+      "body-horror",
+      "practical-effects",
+      "visual-innovation"
+    ],
+    "id": "finding_027"
+  },
+  {
+    "film": "The Brood (1979)",
+    "director": "David Cronenberg",
+    "content": "Canadian body-horror sci-fi film exploring psychic manifestations of trauma through telekinetic children, blending psychological thriller with supernatural sci-fi, featuring Cronenberg's signature stylized visual approach to depicting invisible psychic forces made visible through grotesque imagery",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0078333/",
+      "excerpt": "The Brood centers on a woman whose repressed rage and psychic trauma manifest as telekinetic power channeled through psychogenic rage-children. Cronenberg visualizes invisible psychic forces through grotesque body transformations and surrealist medical imagery, creating a heightened aesthetic that blurs psychology with supernatural horror.",
+      "published_at": "1979-08-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "ESP-telekinesis",
+      "psychological-horror",
+      "sci-fi-horror",
+      "body-horror",
+      "surrealism",
+      "psychic-powers",
+      "visual-innovation",
+      "young-protagonists"
+    ],
+    "id": "finding_028"
+  },
+  {
+    "film": "Possession (1981)",
+    "director": "Andrzej Żuławski",
+    "content": "Polish surrealist psychological horror exploring mental deterioration and psychic/supernatural manifestations through intensely stylized visual language featuring elaborate set design, unconventional framing, distorted mise-en-scène, and visceral imagery to depict invisible psychological and paranormal forces",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Criterion Collection / Sight and Sound",
+      "url": "https://www.imdb.com/title/tt0082933/",
+      "excerpt": "Possession employs radical visual distortion and surrealist composition to externalize invisible psychological and supernatural possession through grotesque creature design, disorienting cinematography, and experimental editing. Żuławski's direction creates a heightened aesthetic reality where internal psychological collapse is visualized through elaborate baroque set design and innovative use of space.",
+      "published_at": "1981-10-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "surrealism",
+      "psychological-horror",
+      "supernatural-possession",
+      "visual-experimentation",
+      "symbolic-imagery",
+      "experimental-direction",
+      "distorted-reality",
+      "body-horror"
+    ],
+    "id": "finding_029"
+  },
+  {
+    "film": "Videodrome (1982)",
+    "director": "David Cronenberg",
+    "content": "Canadian sci-fi horror exploring mind-control through video media and consciousness alteration, employing innovative practical effects, body-horror imagery, and experimental cinematography to visualize invisible psychic manipulation and psychological deterioration caused by supernatural/technological forces",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0086541/",
+      "excerpt": "Videodrome features mind-control and consciousness manipulation through technological/supernatural means. Cronenberg employs innovative practical effects, grotesque body-horror imagery, and experimental visual composition to depict psychological deterioration and invisible manipulation of human consciousness.",
+      "published_at": "1982-02-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "sci-fi-horror",
+      "mind-control",
+      "consciousness-manipulation",
+      "body-horror",
+      "practical-effects",
+      "psychological-horror",
+      "experimental-cinematography",
+      "visual-innovation"
+    ],
+    "id": "finding_030"
+  },
+  {
+    "film": "Poltergeist (1982)",
+    "director": "Tobe Hooper",
+    "content": "American supernatural horror film featuring a teenage girl discovering latent psychic abilities during interactions with otherworldly entities, employing innovative special effects cinematography, elaborate set design, and experimental visual techniques to depict invisible psychic phenomena and telekinetic manifestations",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0084516/",
+      "excerpt": "Poltergeist follows the Freeling family as their youngest daughter Carol Anne discovers psychic sensitivity to supernatural forces. Director Tobe Hooper employs groundbreaking visual effects cinematography, experimental practical effects, and innovative spatial composition to visualize telekinetic phenomena and otherworldly intrusions.",
+      "published_at": "1982-06-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "ESP-psychic-sensitivity",
+      "supernatural-horror",
+      "teenage-protagonist",
+      "telekinesis",
+      "visual-effects-innovation",
+      "experimental-cinematography",
+      "otherworldly-intrusion"
+    ],
+    "id": "finding_031"
+  },
+  {
+    "film": "The Beyond (1981)",
+    "director": "Lucio Fulci",
+    "content": "Italian supernatural horror exploring dimensional rifts and otherworldly intrusion, employing Fulci's experimental visual approach with innovative cinematography, surrealist spatial design, and elaborate set decoration to depict invisible supernatural phenomena and dreamlike atmospheric horror",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Criterion Collection / Sight and Sound",
+      "url": "https://www.imdb.com/title/tt0080560/",
+      "excerpt": "The Beyond showcases Fulci's experimental horror direction employing innovative cinematography, disorienting spatial composition, elaborate gothic set design, and surrealist visual language to depict dimensional rupture and otherworldly supernatural intrusion into domestic space.",
+      "published_at": "1981-01-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "supernatural-horror",
+      "dimensional-rifts",
+      "visual-innovation",
+      "surrealist-design",
+      "experimental-cinematography",
+      "atmospheric-horror",
+      "otherworldly-themes"
+    ],
+    "id": "finding_032"
+  },
+  {
+    "film": "Inferno (1980)",
+    "director": "Dario Argento",
+    "content": "Italian giallo-horror sequel featuring young protagonists encountering supernatural architectural spaces infused with mystical/occult power, employing Argento's signature maximalist visual approach with elaborate color cinematography, surrealist spatial design, and innovative editing to create heightened aesthetic of supernatural menace",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Criterion Collection",
+      "url": "https://www.imdb.com/title/tt0080635/",
+      "excerpt": "Inferno continues Argento's giallo aesthetic with young protagonists discovering supernatural forces inhabiting a mysterious New York apartment building. The film showcases intense color cinematography, dreamlike spatial composition, elaborate set design evoking surrealist painting, and innovative editing techniques to visualize occult/supernatural phenomena.",
+      "published_at": "1980-01-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "giallo-horror",
+      "supernatural-forces",
+      "young-protagonists",
+      "visual-innovation",
+      "surrealist-design",
+      "color-cinematography",
+      "occult-themes"
+    ],
+    "id": "finding_033"
+  },
+  {
+    "film": "Altered States (1980)",
+    "director": "Ken Russell",
+    "content": "American sci-fi psychological horror exploring altered consciousness through experimental drugs and sensory deprivation, employing Ken Russell's signature visually flamboyant direction with surrealist imagery, innovative visual effects, and experimental cinematography to depict invisible psychological and paranormal states",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Wikipedia",
+      "url": "https://www.imdb.com/title/tt0080360/",
+      "excerpt": "Altered States showcases Ken Russell's visually flamboyant direction employing surrealist visual language, innovative optical effects, experimental cinematography, and elaborate visual metaphors to depict consciousness alteration and paranormal phenomena resulting from psychological/physiological experimentation.",
+      "published_at": "1980-12-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "sci-fi-psychological-horror",
+      "consciousness-exploration",
+      "altered-states",
+      "visual-innovation",
+      "surrealism",
+      "experimental-effects",
+      "paranormal-themes"
+    ],
+    "id": "finding_034"
+  },
+  {
+    "film": "Eraserhead (1977)",
+    "director": "David Lynch",
+    "content": "American experimental horror-drama employing extreme visual distortion, surrealist imagery, unconventional framing, and innovative black-and-white cinematography to depict psychological deterioration and dreamlike consciousness, creating heightened aesthetic reality through production design and sound design experimentation",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Criterion Collection / Sight and Sound",
+      "url": "https://www.imdb.com/title/tt0074486/",
+      "excerpt": "Eraserhead showcases Lynch's signature surrealist visual language employing extreme distortion, unconventional framing, dreamlike black-and-white cinematography, and innovative sound design to visualize psychological deterioration and consciousness alteration. The film creates a nightmarish heightened reality through radical production design and experimental editing.",
+      "published_at": "1977-01-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "surrealism",
+      "psychological-horror",
+      "experimental-cinematography",
+      "black-and-white",
+      "visual-distortion",
+      "dreamlike-narrative",
+      "symbolic-imagery"
+    ],
+    "id": "finding_035"
+  },
+  {
+    "film": "Shock (1979)",
+    "director": "Mario Bava",
+    "content": "Italian horror thriller exploring supernatural possession and psychic phenomena within a family home, employing Bava's signature visual mastery including elaborate color cinematography, innovative lighting design, and experimental visual composition to depict invisible psychic/supernatural forces",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "IMDb / Wikipedia",
+      "url": "https://www.imdb.com/title/tt0079983/",
+      "excerpt": "Shock features supernatural possession and psychic phenomena in a domestic setting. Bava employs his signature visual mastery including sophisticated color cinematography, innovative lighting design, and elaborate visual composition to visualize invisible supernatural forces and psychological terror.",
+      "published_at": "1979-01-01",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "supernatural-horror",
+      "possession",
+      "psychic-phenomena",
+      "color-cinematography",
+      "visual-mastery",
+      "family-drama",
+      "psychological-terror"
+    ],
+    "id": "finding_036"
+  },
+  {
+    "film": "Carrie (1976)",
+    "director": "Brian De Palma",
+    "content": "Pioneering telekinetic horror film about a bullied teenage girl with psychokinetic powers who unleashes devastating supernatural violence. Core template for adolescent-centered psychic horror.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/Carrie_(1976_film)",
+      "excerpt": "Carrie (1976) - telekinetic teenage protagonist",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "adolescent protagonist",
+      "supernatural horror",
+      "psychic powers",
+      "bullying",
+      "revenge"
+    ],
+    "id": "finding_037"
+  },
+  {
+    "film": "The Fury (1978)",
+    "director": "Brian De Palma",
+    "content": "Psychological thriller exploring psychokinetic abilities in adolescents and government experimentation with supernatural powers.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/The_Fury_(1978_film)",
+      "excerpt": "The Fury (1978) - adolescent psychokinetic protagonists",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "psychic powers",
+      "government conspiracy",
+      "adolescent characters",
+      "supernatural thriller"
+    ],
+    "id": "finding_038"
+  },
+  {
+    "film": "Scanners (1981)",
+    "director": "David Cronenberg",
+    "content": "Science fiction horror about psychically-gifted individuals (scanners) with telepathic and telekinetic abilities engaged in violent conflict. Explores bodily mutation and mental powers.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/Scanners_(1981_film)",
+      "excerpt": "Scanners (1981) - telepathy, telekinesis, psychic powers",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "telepathy",
+      "psychic powers",
+      "body horror",
+      "mutation",
+      "conspiracy",
+      "psychokinetics"
+    ],
+    "id": "finding_039"
+  },
+  {
+    "film": "Zapped! (1982)",
+    "director": "Robert J. Rosenthal",
+    "content": "Comedy-horror hybrid featuring a teenage protagonist who develops telekinetic powers and uses them to navigate high school social dynamics.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zapped!_(1982_film)",
+      "excerpt": "Zapped! (1982) - teenage telekinetic protagonist in high school",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "adolescent protagonist",
+      "psychic powers",
+      "high school",
+      "comedy-horror"
+    ],
+    "id": "finding_040"
+  },
+  {
+    "film": "Firestarter (1984)",
+    "director": "Mark L. Lester",
+    "content": "Adaptation of Stephen King novel about a young girl with pyrokinetic abilities pursued by government agents. Features child protagonist with destructive supernatural powers.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/Firestarter_(1984_film)",
+      "excerpt": "Firestarter (1984) - child protagonist with pyrokinetic powers",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "pyrokinesis",
+      "child protagonist",
+      "government conspiracy",
+      "supernatural powers",
+      "Stephen King adaptation"
+    ],
+    "id": "finding_041"
+  },
+  {
+    "film": "Poltergeist (1982)",
+    "director": "Tobe Hooper",
+    "content": "Supernatural horror about a family terrorized by poltergeist activity in their suburban home. Features children as conduits for psychokinetic phenomena.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/Poltergeist_(1982_film)",
+      "excerpt": "Poltergeist (1982) - child protagonist with psychic connection",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "poltergeist",
+      "supernatural horror",
+      "children",
+      "psychokinetic phenomena",
+      "haunted house"
+    ],
+    "id": "finding_042"
+  },
+  {
+    "film": "Suspiria (1977)",
+    "director": "Dario Argento",
+    "content": "Italian Gothic horror featuring a young ballerina discovering a coven of witches. Combines supernatural elements with visceral body horror and atmospheric dread.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/Suspiria_(1977_film)",
+      "excerpt": "Suspiria (1977) - young protagonist in supernatural institutional setting",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "witchcraft",
+      "supernatural horror",
+      "Italian horror",
+      "Gothic",
+      "body horror",
+      "young protagonist",
+      "atmospheric horror",
+      "school-setting"
+    ],
+    "id": "finding_043"
+  },
+  {
+    "film": "The Dead Zone (1983)",
+    "director": "David Cronenberg",
+    "content": "Science fiction thriller based on Stephen King novel. Protagonist awakens from coma with psychic abilities and precognitive visions.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/The_Dead_Zone_(1983_film)",
+      "excerpt": "The Dead Zone (1983) - precognition, telekinesis, ESP",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "psychic abilities",
+      "precognition",
+      "telekinesis",
+      "Stephen King adaptation",
+      "supernatural thriller"
+    ],
+    "id": "finding_044"
+  },
+  {
+    "film": "Videodrome (1982)",
+    "director": "David Cronenberg",
+    "content": "Surreal science fiction horror exploring mind control, media manipulation, and bodily transformation through exposure to violent videotape. Blurs reality and hallucination.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/Videodrome_(1982_film)",
+      "excerpt": "Videodrome (1982) - mind control, consciousness manipulation",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "mind control",
+      "body horror",
+      "media manipulation",
+      "psychological horror",
+      "reality distortion"
+    ],
+    "id": "finding_045"
+  },
+  {
+    "film": "Akira (1987)",
+    "director": "Katsuhiro Otomo",
+    "content": "Cyberpunk animated epic featuring adolescent protagonists with devastating psychokinetic and telekinetic abilities in a post-apocalyptic Tokyo.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/Akira_(1988_film)",
+      "excerpt": "Akira (1987) - adolescent protagonists with telekinetic powers",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "telekinesis",
+      "psychokinetics",
+      "adolescent protagonists",
+      "cyberpunk",
+      "anime",
+      "government conspiracy",
+      "visual-innovation"
+    ],
+    "id": "finding_046"
+  },
+  {
+    "film": "The Lost Boys (1987)",
+    "director": "Joel Schumacher",
+    "content": "Supernatural horror-comedy about teenage vampire hunters. Features young protagonists and supernatural creatures threatening community.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/The_Lost_Boys",
+      "excerpt": "The Lost Boys (1987) - teenage protagonists in supernatural setting",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "vampires",
+      "adolescent protagonists",
+      "supernatural horror",
+      "horror-comedy",
+      "young heroes",
+      "cult-structure"
+    ],
+    "id": "finding_047"
+  },
+  {
+    "film": "Fright Night (1985)",
+    "director": "Tom Holland",
+    "content": "Horror-comedy about a teenage boy who discovers his neighbor is a vampire and must stop him from terrorizing the community.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/Fright_Night_(1985_film)",
+      "excerpt": "Fright Night (1985) - teenage protagonist, supernatural threat",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "vampires",
+      "teenage protagonist",
+      "supernatural horror",
+      "horror-comedy",
+      "coming-of-age"
+    ],
+    "id": "finding_048"
+  },
+  {
+    "film": "Society (1989)",
+    "director": "Brian Yuzna",
+    "content": "Body horror science fiction about a teenager discovering his family and community are part of an alien conspiracy. Features grotesque transformation sequences.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/Society_(1989_film)",
+      "excerpt": "Society (1989) - teenage protagonist, body horror conspiracy",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "body horror",
+      "adolescent protagonist",
+      "conspiracy",
+      "transformation",
+      "alien themes",
+      "coming-of-age"
+    ],
+    "id": "finding_049"
+  },
+  {
+    "film": "The Gate (1987)",
+    "director": "Tibor Takacs",
+    "content": "Supernatural horror about children discovering a mystical gate in their backyard that unleashes demonic forces.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/The_Gate_(1987_film)",
+      "excerpt": "The Gate (1987) - children protagonists, supernatural phenomena",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "supernatural horror",
+      "children protagonists",
+      "demons",
+      "portal",
+      "dark forces",
+      "coming-of-age"
+    ],
+    "id": "finding_050"
+  },
+  {
+    "film": "Christine (1983)",
+    "director": "John Carpenter",
+    "content": "Science fiction horror about a possessed 1958 Plymouth Fury that becomes sentient and violently protective of its teenage owner.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/Christine_(1983_film)",
+      "excerpt": "Christine (1983) - teenage protagonist, possession horror",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "possession",
+      "teenage protagonist",
+      "killer car",
+      "supernatural horror",
+      "Stephen King adaptation",
+      "coming-of-age"
+    ],
+    "id": "finding_051"
+  },
+  {
+    "film": "Phantasm (1979)",
+    "director": "Don Coscarelli",
+    "content": "Surreal horror-fantasy about a teenage boy and his brother battling a supernatural mortician called The Tall Man who transforms the dead into deadly minions.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/Phantasm_(1979_film)",
+      "excerpt": "Phantasm (1979) - teenage protagonists, supernatural antagonist",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "supernatural horror",
+      "adolescent protagonists",
+      "surreal horror",
+      "cult-antagonist",
+      "cult classic"
+    ],
+    "id": "finding_052"
+  },
+  {
+    "film": "Phantasm II (1988)",
+    "director": "Don Coscarelli",
+    "content": "Sequel continuing the battle between teenage protagonists and The Tall Man. Features escalated supernatural violence and psychokinetic phenomena.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/Phantasm_II",
+      "excerpt": "Phantasm II (1988) - teenage protagonists, cult antagonist",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "supernatural horror",
+      "adolescent protagonists",
+      "surreal horror",
+      "cult-antagonist",
+      "psychokinetics"
+    ],
+    "id": "finding_053"
+  },
+  {
+    "film": "The Brood (1979)",
+    "director": "David Cronenberg",
+    "content": "Body horror psychological thriller about a woman whose suppressed rage manifests as murderous psychokinetic children born from her body.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/The_Brood",
+      "excerpt": "The Brood (1979) - psychokinetic manifestations, body horror",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "body horror",
+      "psychokinetics",
+      "psychological horror",
+      "Cronenberg",
+      "mutation",
+      "visual-innovation"
+    ],
+    "id": "finding_054"
+  },
+  {
+    "film": "Possession (1981)",
+    "director": "Andrzej Żuławski",
+    "content": "Surreal psychological horror blending marital breakdown with cosmic horror and possession themes. Features visceral creature effects and psychic phenomena.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/Possession_(1981_film)",
+      "excerpt": "Possession (1981) - psychological horror, psychic phenomena",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "possession",
+      "psychological horror",
+      "cosmic horror",
+      "surreal horror",
+      "creature effects",
+      "visual-innovation"
+    ],
+    "id": "finding_055"
+  },
+  {
+    "film": "The Beyond (1981)",
+    "director": "Lucio Fulci",
+    "content": "Italian supernatural horror featuring a woman inheriting a hotel that serves as a gateway to hell. Explores psychokinetic phenomena and otherworldly dimensions.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/The_Beyond_(1981_film)",
+      "excerpt": "The Beyond (1981) - psychokinetic phenomena, supernatural horror",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "supernatural horror",
+      "Italian horror",
+      "hell portal",
+      "psychokinetics",
+      "dimensional horror",
+      "visual-innovation"
+    ],
+    "id": "finding_056"
+  },
+  {
+    "film": "Inferno (1980)",
+    "director": "Dario Argento",
+    "content": "Gothic Italian horror exploring a building connected to a coven of witches. Features atmospheric dread, supernatural mysteries, and psychokinetic elements.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/Inferno_(1980_film)",
+      "excerpt": "Inferno (1980) - supernatural mystery, institutional setting",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "witchcraft",
+      "Italian horror",
+      "supernatural horror",
+      "Gothic atmosphere",
+      "psychokinetics",
+      "visual-innovation",
+      "school-setting"
+    ],
+    "id": "finding_057"
+  },
+  {
+    "film": "Altered States (1980)",
+    "director": "Ken Russell",
+    "content": "Science fiction horror about a scientist using sensory deprivation and psychoactive drugs to explore altered consciousness, resulting in physical and psychic transformation.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/Altered_States",
+      "excerpt": "Altered States (1980) - consciousness alteration, psychic phenomena",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "altered consciousness",
+      "body transformation",
+      "psychic phenomena",
+      "scientific horror",
+      "mind-body horror",
+      "visual-innovation"
+    ],
+    "id": "finding_058"
+  },
+  {
+    "film": "Eraserhead (1977)",
+    "director": "David Lynch",
+    "content": "Surreal black-and-white body horror about a man navigating an industrial dystopia and fatherhood nightmare. Features visceral imagery and psychological terror.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / Criterion",
+      "url": "https://en.wikipedia.org/wiki/Eraserhead",
+      "excerpt": "Eraserhead (1977) - surreal horror, psychological terror",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "body horror",
+      "surreal horror",
+      "psychological terror",
+      "industrial horror",
+      "Lynch",
+      "nightmare logic",
+      "visual-innovation"
+    ],
+    "id": "finding_059"
+  },
+  {
+    "film": "Shock (1979)",
+    "director": "Mario Bava",
+    "content": "Italian supernatural horror about a woman and child haunted by poltergeist activity in their home. Features psychokinetic phenomena and domestic terror.",
+    "confidence": "high",
+    "type": "claim",
+    "source": {
+      "type": "agent_output",
+      "document": "Wikipedia / IMDb",
+      "url": "https://en.wikipedia.org/wiki/Shock_(1979_film)",
+      "excerpt": "Shock (1979) - poltergeist, psychokinetic phenomena",
+      "published_at": "",
+      "accessed_at": "2026-03-28",
+      "page": ""
+    },
+    "tags": [
+      "poltergeist",
+      "psychokinetics",
+      "Italian horror",
+      "haunted house",
+      "domestic horror",
+      "Bava"
+    ],
+    "id": "finding_060"
+  }
+]
