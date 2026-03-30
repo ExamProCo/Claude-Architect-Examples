@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "sessionId": "session_1774885684129",
+    "playerName": "Deranno",
+    "currentRoomId": "entrance",
+    "turnCount": 0,
+    "generatedAt": "2026-03-30T15:48:15.224Z"
+  },
+  "rooms": {
+    "entrance": {
+      "id": "entrance",
+      "zone": "dungeon-entrance",
+      "depth": 0,
+      "title": "The Dungeon Entrance",
+      "exits": {
+        "north": {
+          "direction": "north",
+          "type": "open",
+          "targetRoomId": "room_dungeon-entrance_1_north",
+          "description": "A dark corridor leads deeper into the dungeon."
+        },
+        "south": null,
+        "east": {
+          "direction": "east",
+          "type": "door",
+          "targetRoomId": "room_dungeon-entrance_1_east",
+          "description": "A heavy wooden door stands slightly ajar."
+        },
+        "west": null
+      },
+      "npcSlots": [],
+      "itemSlots": [],
+      "features": [],
+      "codeFile": "world/rooms/entrance.ts",
+      "loreEntryId": "lore_entrance",
+      "generationStatus": "complete"
+    },
+    "room_dungeon-entrance_1_east": {
+      "id": "room_dungeon-entrance_1_east",
+      "zone": "dungeon-entrance",
+      "depth": 1,
+      "title": "The Torch-Lit Descending Hall",
+      "exits": {
+        "west": {
+          "direction": "west",
+          "type": "open",
+          "targetRoomId": "room_dungeon-entrance_1_west",
+          "description": "The sloping corridor back toward the entrance chamber, the torchlight growing warmer and more inviting."
+        },
+        "south": {
+          "direction": "south",
+          "type": "open",
+          "targetRoomId": "room_dungeon-entrance_2_south",
+          "description": "The passage continues its downward spiral, torches growing sparse and shadows deepening."
+        }
+      },
+      "npcSlots": [
+        "npc_dungeon-entrance_1_guardian"
+      ],
+      "itemSlots": [],
+      "features": [],
+      "codeFile": "world/rooms/room_dungeon-entrance_1_east.ts",
+      "loreEntryId": "lore_room_dungeon-entrance_1_east",
+      "generationStatus": "complete"
+    }
+  },
+  "npcs": {
+    "npc_dungeon-entrance_1_guardian": {
+      "id": "npc_dungeon-entrance_1_guardian",
+      "name": "The Watcher",
+      "type": "neutral",
+      "description": "A cloaked figure of indeterminate age, their face obscured by shadow and the hood of a weathered garment. They stand motionless against the stone wall, one gnarled hand resting on a walking staff of blackened wood, observing all who pass with eyes that seem to catalogue every detail.",
+      "dialogueTree": {
+        "greeting": "The Watcher's eyes lift toward you, measuring and unhurried. 'Another descends,' they murmur. 'Few return the same as they went down.'",
+        "farewell": "The Watcher nods slowly, returning their gaze to the darkness below. 'Go then. The corridor waits for no one.'",
+        "quest": "The Watcher shifts their weight on the staff. 'If you seek purpose here, venture deeper. The torches know secrets the entrance never will.'"
+      },
+      "behaviorFlags": {
+        "isQuestGiver": true,
+        "isCombatant": false,
+        "isInformant": true
+      },
+      "stats": {
+        "hp": 15,
+        "attack": 1,
+        "defense": 1,
+        "level": 1
+      },
+      "questSeed": {
+        "id": "quest_npc_dungeon-entrance_1_guardian_torchlight",
+        "title": "The Torches Below",
+        "hook": "The Watcher hints that the descending passage holds mysteries revealed only to those who venture into its depths and return to share what they've seen.",
+        "suggestedDepth": 2,
+        "themeHints": [
+          "ancient",
+          "illumination",
+          "witness"
+        ]
+      }
+    }
+  },
+  "items": {},
+  "quests": {
+    "quest_rk6r7dmo": [
+      {
+        "id": "qnode_quest_npc_dungeon-entrance_1_guardian_torchlight_0",
+        "title": "The Watcher's Challenge",
+        "description": "The Watcher at the dungeon entrance speaks of mysteries hidden in the descending passage, accessible only to those brave enough to venture into darkness. They hint that the torches below hold secrets waiting to be witnessed and reported back.",
+        "objectives": [
+          "Speak with the Watcher to learn about the passage below",
+          "Descend into the depths beyond the entrance chamber",
+          "Observe what the torches illuminate in the darkness"
+        ],
+        "rewards": {
+          "xp": 20,
+          "items": [],
+          "flags": [
+            "torchlight-quest-begun",
+            "watcher-challenged"
+          ]
+        },
+        "isTerminal": false,
+        "parentId": "quest_npc_dungeon-entrance_1_guardian_torchlight"
+      },
+      {
+        "id": "qnode_quest_npc_dungeon-entrance_1_guardian_torchlight_1",
+        "title": "Depths of Illumination",
+        "description": "You descend past the entrance, following the ancient torches that line the passage walls. Their flames seem to dance with purpose, revealing stone carvings and symbols of a civilization long forgotten. The air grows colder as you go deeper.",
+        "objectives": [
+          "Navigate through the torchlit passage",
+          "Document or examine the ancient carvings and symbols",
+          "Find evidence of what the torches were meant to illuminate"
+        ],
+        "rewards": {
+          "xp": 25,
+          "items": [
+            "torch-fragment",
+            "ancient-tablet"
+          ],
+          "flags": [
+            "passage-explored",
+            "ancient-script-discovered"
+          ]
+        },
+        "isTerminal": false,
+        "parentId": "qnode_quest_npc_dungeon-entrance_1_guardian_torchlight_0"
+      }
+    ],
+    "quest_883w3jp5": [
+      {
+        "id": "qnode_quest_rk6r7dmo_2",
+        "title": "The Sacred Chamber Below",
+        "description": "The ancient carvings you discovered point toward a sacred chamber deep within the dungeon where the ancients once tended an eternal flame. This chamber was a repository of knowledge and power, now lost to time. You must venture into the deeper levels to find this sacred place and uncover what wisdom or artifacts remain.",
+        "objectives": [
+          "Descend deeper into the dungeon past the known chambers",
+          "Find the sacred chamber marked by the ancients",
+          "Examine the remnants of the eternal flame and any preserved knowledge"
+        ],
+        "rewards": {
+          "xp": 50,
+          "items": [
+            "ancient-scroll",
+            "flame-relic"
+          ],
+          "flags": [
+            "sacred-chamber-found",
+            "ancient-knowledge-discovered"
+          ]
+        },
+        "isTerminal": true,
+        "parentId": "qnode_quest_npc_dungeon-entrance_1_guardian_torchlight_1"
+      }
+    ]
+  },
+  "loreEntries": {
+    "lore_entrance": {
+      "id": "lore_entrance",
+      "targetId": "entrance",
+      "targetType": "room",
+      "text": "You stand at the threshold of an ancient dungeon. Torchlight flickers against moss-covered stone walls, casting dancing shadows across the floor. The air smells of damp earth and forgotten ages. Two paths beckon — a dark corridor stretching north, and a heavy door to the east.",
+      "consistencyFlags": [
+        "dungeon-entrance-exists",
+        "torchlit-entrance"
+      ]
+    },
+    "lore_room_dungeon-entrance_1_east": {
+      "id": "lore_room_dungeon-entrance_1_east",
+      "targetId": "room_dungeon-entrance_1_east",
+      "targetType": "room",
+      "text": "You stand in a descending hallway where iron torches bracket the stone walls at regular intervals, their flames casting dancing shadows across worn steps that spiral downward into deeper darkness. The air grows colder with each descent, carrying the mineral scent of ancient stone and something faintly metallic. To the west, the torchlight grows warmer and more inviting—the way back toward the entrance—while south, the passage continues its downward spiral into shadow and uncertainty.",
+      "consistencyFlags": [
+        "torchlit-descending-passage",
+        "dungeon-spirals-downward"
+      ]
+    },
+    "lore_npc_dungeon-entrance_1_guardian": {
+      "id": "lore_npc_dungeon-entrance_1_guardian",
+      "targetId": "npc_dungeon-entrance_1_guardian",
+      "targetType": "npc",
+      "text": "The Watcher stands sentinel in the torchlit entrance, a figure of unknowable age wrapped in weathered cloth, their face lost to shadow despite the flickering light. One gnarled hand grips a staff of blackened wood, and their eyes—sharp, patient, eternal—seem to catalogue every soul who descends into the dungeon's depths. They have watched long enough to know which travelers return changed, and which do not return at all.",
+      "consistencyFlags": [
+        "watcher-ancient",
+        "sentinel-at-threshold",
+        "torches-hold-secrets"
+      ]
+    }
+  },
+  "consistencyFlags": {
+    "dungeon-entrance-exists": true,
+    "torchlit-entrance": true,
+    "torchlit-descending-passage": true,
+    "dungeon-spirals-downward": true,
+    "watcher-ancient": true,
+    "sentinel-at-threshold": true,
+    "torches-hold-secrets": true
+  },
+  "typeRegistry": {
+    "interfaces": {},
+    "classes": {},
+    "modules": {}
+  },
+  "decompositionLog": [
+    {
+      "turnId": "gd70xe0o",
+      "agentCalled": "room-builder",
+      "inputSummary": "roomId=room_dungeon-entrance_1_east zone=dungeon-entrance depth=1",
+      "outputSummary": "blueprint: low weight, 1 NPCs, 2 exits",
+      "branchesSpawned": [],
+      "branchesClosed": [],
+      "timestamp": "2026-03-30T15:49:10.431Z"
+    },
+    {
+      "turnId": "gd70xe0o",
+      "agentCalled": "orchestrator",
+      "inputSummary": "generateRoom(room_dungeon-entrance_1_east)",
+      "outputSummary": "complete: 1 NPCs, 2 lore entries",
+      "branchesSpawned": [],
+      "branchesClosed": [
+        "room_dungeon-entrance_1_east"
+      ],
+      "timestamp": "2026-03-30T15:49:27.028Z"
+    }
+  ],
+  "openBranches": []
+}
