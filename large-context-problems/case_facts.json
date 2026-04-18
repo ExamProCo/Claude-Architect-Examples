@@ -1,0 +1,12 @@
+{
+  "current_room": "entrance",
+  "inventory": [],
+  "visited_rooms": [
+    "entrance"
+  ],
+  "health": 100,
+  "discoveries": [
+    "Found something secret in entrance"
+  ],
+  "turns": 3
+}
