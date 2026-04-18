@@ -8,7 +8,7 @@ from anthropic import AsyncAnthropic, DefaultAioHttpClient
 load_dotenv(Path(__file__).parent.parent / ".env")
 
 # ---------------------------------------------------------------------------
-# isError helpers
+# Tool result helpers — every error is TYPED, never generic
 # ---------------------------------------------------------------------------
 
 def make_error(error_type: str, message: str, **extra) -> dict:
@@ -19,10 +19,10 @@ def make_ok(text: str) -> dict:
     return {"content": [{"type": "text", "text": text}]}
 
 # ---------------------------------------------------------------------------
-# Tool implementations
+# Domain tools
 # ---------------------------------------------------------------------------
 
-_inventory = {"widget-A": 12, "widget-B": 0, "gadget-X": 3}
+_inventory = {"widget-A": 0, "widget-B": 0, "gadget-X": 3}
 
 def tool_check_inventory(item: str) -> dict:
     qty = _inventory.get(item, -1)
@@ -56,7 +56,11 @@ TOOL_HANDLERS = {
     "send_notification": tool_send_notification,
 }
 
-tools = [
+# ---------------------------------------------------------------------------
+# SCOPED tool sets — each subagent only sees its own tool
+# ---------------------------------------------------------------------------
+
+INVENTORY_TOOLS = [
     {
         "name": "check_inventory",
         "description": "Check how many units of an item are currently in stock.",
@@ -66,6 +70,9 @@ tools = [
             "required": ["item"],
         },
     },
+]
+
+ORDER_TOOLS = [
     {
         "name": "place_order",
         "description": "Place a purchase order for a given item and quantity.",
@@ -78,6 +85,9 @@ tools = [
             "required": ["item", "quantity"],
         },
     },
+]
+
+NOTIFICATION_TOOLS = [
     {
         "name": "send_notification",
         "description": "Send a notification message to a recipient (e.g. 'warehouse', 'manager').",
@@ -90,58 +100,157 @@ tools = [
 ]
 
 # ---------------------------------------------------------------------------
-# System prompts — define each subagent's failure strategy
+# Structured report contract — every subagent returns this shape
 # ---------------------------------------------------------------------------
 
-# LEFT SIDE: subagent immediately propagates every failure
-NAIVE_SUBAGENT_SYSTEM = """You are an inventory operations subagent.
-You have tools to check inventory, place orders, and send notifications.
+STRUCTURED_REPORT_FORMAT = """
+Return ONLY a JSON object (no surrounding prose) with this exact shape:
 
-When a tool returns is_error: true, STOP IMMEDIATELY and respond with:
-{"status": "failed", "error_type": "<type>", "message": "<message>", "failed_tool": "<tool>"}
+{
+  "status": "success" | "completed" | "failed",
+  "subagent": "<your name>",
+  "summary": "<one sentence describing what was accomplished>",
+  "attempts": [
+    {
+      "tool": "<tool_name>",
+      "input": { ... },
+      "approach": "initial" | "retry_<n>" | "alternative_<short_reason>",
+      "outcome": "success" | "<error_type>",
+      "detail": "<short note from the tool result>"
+    }
+  ],
+  "failures": [
+    {
+      "task": "<what you tried to do>",
+      "error_type": "<type returned by the tool>",
+      "approaches_tried": ["<approach1>", "<approach2>"],
+      "final_message": "<reason it could not be fixed>"
+    }
+  ]
+}
 
-Do NOT attempt any recovery or alternatives. Propagate every failure immediately."""
+status rules:
+  "success"   = no failures, no recovery needed
+  "completed" = some recovery happened OR some sub-tasks failed but others succeeded
+  "failed"    = nothing was accomplished
 
-# RIGHT SIDE: subagent recovers locally, propagates only what it cannot fix
-RESILIENT_SUBAGENT_SYSTEM = """You are an inventory operations subagent with local recovery capabilities.
-You have tools to check inventory, place orders, and send notifications.
+Never use generic error strings. Every entry must reference a typed error
+(transient | validation | business | permission) returned by a tool.
+"""
 
-Recovery rules — attempt these BEFORE reporting failure:
+# ---------------------------------------------------------------------------
+# Subagent system prompts — domain-specific recovery strategies
+# ---------------------------------------------------------------------------
 
-  transient   -> retry the same call up to 2 times
-  validation  -> fix the identified field and retry with corrected input
-  business    -> try a reasonable alternative; note it but continue other tasks
-  permission  -> try an alternate recipient (e.g. if 'executive team' is denied,
-                 try 'manager' or 'operations lead'); continue with remaining tasks
+INVENTORY_AGENT_SYSTEM = f"""You are the INVENTORY subagent. Your only tool is check_inventory.
 
-Complete ALL tasks before reporting. Respond with:
-  {"status": "success", "summary": "<what was accomplished>"}
-  or if some tasks failed after recovery:
-  {"status": "completed", "summary": "<successes>", "failures": ["<what failed and why>"]}"""
+Recovery rules:
+  transient  -> retry the same call up to 2 times (the SKU lookup may be flaky)
+  business   -> the item exists but is unavailable; report as a clean failure
+  validation -> fix the input and retry once
 
-COORDINATOR_SYSTEM = """You are an inventory management coordinator.
-You delegate tasks to an operations subagent and report results to the user.
+Log every attempt — including retries — in the attempts array.
+Never invent stock numbers; only report what the tool returned.
+{STRUCTURED_REPORT_FORMAT}"""
 
-The subagent returns JSON:
-  "success"   -> everything worked
-  "completed" -> partial success with failures array
-  "failed"    -> early stop, nothing completed after the error
+ORDER_AGENT_SYSTEM = f"""You are the ORDER subagent. Your only tool is place_order.
 
-Provide a concise, clear summary for the user."""
+Recovery rules:
+  validation -> read the 'field' and 'received' fields from the error and retry
+                with corrected input (e.g. clamp quantity to >= 1)
+  transient  -> retry up to 2 times
+  business   -> item cannot be ordered (e.g. discontinued); report as a clean failure
+
+Log every attempt. Never invent order IDs.
+{STRUCTURED_REPORT_FORMAT}"""
+
+NOTIFICATION_AGENT_SYSTEM = f"""You are the NOTIFICATION subagent. Your only tool is send_notification.
+
+Recovery rules:
+  permission -> if a recipient is denied (e.g. 'executive team'), try alternates
+                in this order: 'manager', then 'operations lead'.
+                Record which alternate succeeded in the attempts array.
+  transient  -> retry up to 2 times
+  validation -> fix the input and retry once
+
+Send to ALL requested recipients — do not stop at the first failure.
+Continue with remaining recipients even if one fails.
+{STRUCTURED_REPORT_FORMAT}"""
+
+# ---------------------------------------------------------------------------
+# Coordinator — delegates to subagents via tool calls
+# ---------------------------------------------------------------------------
+
+COORDINATOR_TOOLS = [
+    {
+        "name": "delegate_to_inventory_agent",
+        "description": "Send a stock-check task to the inventory subagent. Use FIRST for any order request to verify availability.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "task": {"type": "string", "description": "Plain-language task, e.g. 'Check stock for widget-A'"},
+            },
+            "required": ["task"],
+        },
+    },
+    {
+        "name": "delegate_to_order_agent",
+        "description": "Send an order placement task to the order subagent. Only call after inventory confirms availability.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "task": {"type": "string", "description": "Plain-language task, e.g. 'Place order for 5 units of widget-A'"},
+            },
+            "required": ["task"],
+        },
+    },
+    {
+        "name": "delegate_to_notification_agent",
+        "description": "Send a notification task (one or many recipients) to the notification subagent.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "task": {"type": "string", "description": "Plain-language task, e.g. 'Notify warehouse and executive team that order ORD-1234 was placed'"},
+            },
+            "required": ["task"],
+        },
+    },
+]
+
+COORDINATOR_SYSTEM = """You are the COORDINATOR for an inventory operations workflow.
+
+You delegate work to three specialized subagents (each is a tool call):
+  - inventory_agent     -> stock checks
+  - order_agent         -> order placement
+  - notification_agent  -> messaging
+
+Each subagent returns a STRUCTURED JSON REPORT with these fields:
+  status, subagent, summary, attempts[], failures[]
+
+Workflow rules:
+  1. Plan the workflow from the user request before delegating.
+  2. Delegate one phase at a time. Wait for the report before deciding the next step.
+  3. If a subagent reports "failed" on a critical prerequisite (e.g. inventory says
+     out of stock), STOP — do not proceed to dependent steps.
+  4. If a subagent reports "completed" with partial failures, continue but carry
+     those failures forward into your final summary.
+  5. After all delegations, give the user a concise outcome summary that:
+       - names which subagent succeeded / recovered / failed
+       - cites the specific error_type when something failed
+       - mentions any alternative approach a subagent used to recover
+
+Never invent results not present in subagent reports."""
 
 model = "claude-haiku-4-5-20251001"
-MAX_SUBAGENT_STEPS = 12
+MAX_SUBAGENT_STEPS = 8
+MAX_COORDINATOR_STEPS = 8
 
 # ---------------------------------------------------------------------------
-# Subagent runner — its own Claude instance with its own tool loop
+# Subagent runner — its own Claude instance with its own scoped tool loop
 # ---------------------------------------------------------------------------
 
-async def run_subagent(client, task: str, system_prompt: str, label: str) -> str:
-    """
-    Run a subagent: a separate Claude call with tool access.
-    Returns the subagent's final JSON report string.
-    """
-    print(f"\n  ┌─ SUBAGENT [{label}] {'─' * (44 - len(label))}")
+async def run_subagent(client, *, name: str, task: str, system_prompt: str, tools: list) -> str:
+    print(f"\n  ┌─ SUBAGENT [{name}] {'─' * (44 - len(name))}")
     print(f"  │  Task: {task[:75]}{'...' if len(task) > 75 else ''}")
 
     messages = [{"role": "user", "content": task}]
@@ -149,7 +258,7 @@ async def run_subagent(client, task: str, system_prompt: str, label: str) -> str
     for step in range(MAX_SUBAGENT_STEPS):
         response = await client.messages.create(
             model=model,
-            max_tokens=1024,
+            max_tokens=1536,
             system=system_prompt,
             tools=tools,
             messages=messages,
@@ -160,9 +269,14 @@ async def run_subagent(client, task: str, system_prompt: str, label: str) -> str
         if response.stop_reason == "end_turn":
             report = next(
                 (b.text for b in response.content if hasattr(b, "text")),
-                '{"status": "failed", "message": "subagent produced no output"}',
+                json.dumps({
+                    "status": "failed", "subagent": name,
+                    "summary": "subagent produced no output",
+                    "attempts": [], "failures": [],
+                }),
             )
-            print(f"  │  Report: {report}")
+            preview = report.replace("\n", " ")
+            print(f"  │  Report: {preview[:180]}{'...' if len(preview) > 180 else ''}")
             print(f"  └{'─' * 52}")
             return report
 
@@ -198,45 +312,94 @@ async def run_subagent(client, task: str, system_prompt: str, label: str) -> str
             ]
 
     print(f"  └─ [max steps reached] {'─' * 30}")
-    return '{"status": "failed", "message": "subagent exceeded max steps"}'
+    return json.dumps({
+        "status": "failed", "subagent": name,
+        "summary": "subagent exceeded max steps",
+        "attempts": [], "failures": [],
+    })
 
+
+SUBAGENT_REGISTRY = {
+    "delegate_to_inventory_agent": {
+        "name": "inventory",
+        "system": INVENTORY_AGENT_SYSTEM,
+        "tools": INVENTORY_TOOLS,
+    },
+    "delegate_to_order_agent": {
+        "name": "order",
+        "system": ORDER_AGENT_SYSTEM,
+        "tools": ORDER_TOOLS,
+    },
+    "delegate_to_notification_agent": {
+        "name": "notification",
+        "system": NOTIFICATION_AGENT_SYSTEM,
+        "tools": NOTIFICATION_TOOLS,
+    },
+}
 
 # ---------------------------------------------------------------------------
-# Coordinator — orchestrates the subagent and reports to the user
+# Coordinator runner — its own tool loop, tools = subagent delegations
 # ---------------------------------------------------------------------------
 
-async def run_coordinator(client, user_message: str, use_resilient: bool) -> None:
-    mode = "RESILIENT" if use_resilient else "NAIVE"
-    subagent_system = RESILIENT_SUBAGENT_SYSTEM if use_resilient else NAIVE_SUBAGENT_SYSTEM
-
+async def run_coordinator(client, user_message: str) -> None:
     print(f"\n{'=' * 58}")
-    print(f"  COORDINATOR  [{mode} subagent]")
+    print(f"  COORDINATOR")
     print(f"{'=' * 58}")
-    print(f"  Delegating task to subagent...")
+    print(f"  User request: {user_message}")
 
-    # Step 1: subagent handles execution (with or without recovery)
-    subagent_report = await run_subagent(client, user_message, subagent_system, mode)
+    messages = [{"role": "user", "content": user_message}]
 
-    # Step 2: coordinator interprets the report for the user
-    coord_response = await client.messages.create(
-        model=model,
-        max_tokens=512,
-        system=COORDINATOR_SYSTEM,
-        messages=[{
-            "role": "user",
-            "content": (
-                f"Original user request: {user_message}\n\n"
-                f"Subagent report: {subagent_report}\n\n"
-                "Summarize the outcome for the user in 2-3 sentences."
-            ),
-        }],
-    )
+    for step in range(MAX_COORDINATOR_STEPS):
+        response = await client.messages.create(
+            model=model,
+            max_tokens=2048,
+            system=COORDINATOR_SYSTEM,
+            tools=COORDINATOR_TOOLS,
+            messages=messages,
+        )
 
-    summary = next(
-        (b.text for b in coord_response.content if hasattr(b, "text")),
-        "(coordinator produced no response)",
-    )
-    print(f"\n  COORDINATOR -> User:\n  {summary}")
+        print(f"\n  COORDINATOR [step {step + 1}] stop_reason={response.stop_reason}")
+
+        if response.stop_reason == "end_turn":
+            summary = next(
+                (b.text for b in response.content if hasattr(b, "text")),
+                "(coordinator produced no response)",
+            )
+            print(f"\n  COORDINATOR -> User:\n  {summary}\n")
+            return
+
+        if response.stop_reason == "tool_use":
+            tool_results = []
+            for block in response.content:
+                if block.type != "tool_use":
+                    continue
+
+                spec = SUBAGENT_REGISTRY[block.name]
+                print(f"  COORDINATOR delegates -> {block.name}")
+                report = await run_subagent(
+                    client,
+                    name=spec["name"],
+                    task=block.input["task"],
+                    system_prompt=spec["system"],
+                    tools=spec["tools"],
+                )
+
+                tool_results.append({
+                    "type": "tool_result",
+                    "tool_use_id": block.id,
+                    "content": report,
+                })
+
+            messages += [
+                {"role": "assistant", "content": response.content},
+                {"role": "user", "content": tool_results},
+            ]
+            continue
+
+        print(f"  COORDINATOR unexpected stop_reason; ending loop")
+        return
+
+    print(f"\n  COORDINATOR [max steps reached]\n")
 
 
 # ---------------------------------------------------------------------------
@@ -255,19 +418,19 @@ async def main() -> None:
         )
 
         print("=" * 58)
-        print("  Subagent Failure Recovery Demo")
+        print("  Coordinator + 3 Subagents Demo")
         print("=" * 58)
-        print(f"\n  User request:\n  {user_message}")
+        print(f"\n  A coordinator delegates to three specialized subagents")
+        print(f"  (inventory / order / notification). Each subagent has:")
+        print(f"    - a SCOPED tool set (only its own tool)")
+        print(f"    - DOMAIN-SPECIFIC recovery rules")
+        print(f"    - a STRUCTURED report contract:")
+        print(f"        status, summary, attempts[], failures[]")
         print(f"\n  The 'executive team' notification triggers a permission")
-        print(f"  error. Watch how each subagent mode handles it.\n")
+        print(f"  error — watch the notification subagent recover by trying")
+        print(f"  an alternative recipient and recording the approach.\n")
 
-        # ── LEFT SIDE: naive subagent — stops at first error ───────────────
-        print("\n  [LEFT SIDE]  Naive: subagent immediately propagates failures")
-        await run_coordinator(client, user_message, use_resilient=False)
-
-        # ── RIGHT SIDE: resilient subagent — recovers locally ──────────────
-        print(f"\n\n  [RIGHT SIDE] Resilient: subagent attempts local recovery first")
-        await run_coordinator(client, user_message, use_resilient=True)
+        await run_coordinator(client, user_message)
 
 
 asyncio.run(main())

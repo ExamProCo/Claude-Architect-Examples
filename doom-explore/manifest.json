@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "t-0001",
+      "kind": "explore",
+      "question": "How does a player take damage?",
+      "status": "complete",
+      "started_at": "2026-04-18T00:00:00Z",
+      "finished_at": "2026-04-18T00:00:00Z",
+      "artifact": "FINDINGS/t-0001-player-damage.md",
+      "inputs": [],
+      "notes": ""
+    },
+    {
+      "id": "t-0002",
+      "kind": "explore",
+      "question": "How does armor pickup and armor class affect damage absorption?",
+      "status": "complete",
+      "started_at": "2026-04-18T00:00:00Z",
+      "finished_at": "2026-04-18T00:00:00Z",
+      "artifact": "FINDINGS/t-0002-armor-mechanics.md",
+      "inputs": [],
+      "notes": ""
+    },
+    {
+      "id": "t-0003",
+      "kind": "explore",
+      "question": "How do weapons compute and apply damage to targets?",
+      "status": "complete",
+      "started_at": "2026-04-18T00:00:00Z",
+      "finished_at": "2026-04-18T00:00:00Z",
+      "artifact": "FINDINGS/t-0003-weapon-damage.md",
+      "inputs": [],
+      "notes": ""
+    },
+    {
+      "id": "t-0004",
+      "kind": "explore",
+      "question": "How does player death and respawn work?",
+      "status": "complete",
+      "started_at": "2026-04-18T00:00:00Z",
+      "finished_at": "2026-04-18T00:00:00Z",
+      "artifact": "FINDINGS/t-0004-player-death-respawn.md",
+      "inputs": [],
+      "notes": ""
+    },
+    {
+      "id": "t-0005",
+      "kind": "synthesize",
+      "question": "How does player damage, armor, weapons, and death fit together in DOOM?",
+      "status": "complete",
+      "started_at": "2026-04-18T00:00:00Z",
+      "finished_at": "2026-04-18T00:00:00Z",
+      "artifact": "FINDINGS/_synthesis/damage-lifecycle.md",
+      "inputs": [
+        "FINDINGS/t-0001-player-damage.md",
+        "FINDINGS/t-0002-armor-mechanics.md",
+        "FINDINGS/t-0003-weapon-damage.md",
+        "FINDINGS/t-0004-player-death-respawn.md"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "t-0006",
+      "kind": "explore",
+      "question": "How is painchance computed when a monster or player is hit?",
+      "status": "complete",
+      "started_at": "2026-04-17T00:00:00Z",
+      "finished_at": "2026-04-18T21:30:00Z",
+      "artifact": "FINDINGS/t-0006-painchance.md",
+      "inputs": [],
+      "notes": "reconciled: stuck in 'running' past 10m window"
+    }
+  ]
+}
