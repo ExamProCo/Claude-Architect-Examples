@@ -3,11 +3,13 @@ import sys
 from pathlib import Path
 from dataclasses import dataclass, field
 from enum import Enum
+from typing import Literal
 from dotenv import load_dotenv
 import anthropic
+from anthropic import beta_tool
 
 load_dotenv(Path(__file__).parent.parent / ".env")
-client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"),)
+client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
 from sdk_parser import log_message
@@ -119,152 +121,145 @@ RESOLVE autonomously (use your tools):
 - Business development inquiry (route to BD team)
 - GDPR data request"""
 
-TOOLS = [
-    {
-        "name": "issue_refund",
-        "description": "Issue a refund for a course purchase",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "customer_email": {"type": "string", "description": "Customer's email address"},
-                "order_id": {"type": "string", "description": "The order ID to refund"},
-                "reason": {"type": "string", "description": "Reason for the refund"}
-            },
-            "required": ["customer_email", "order_id", "reason"]
-        }
-    },
-    {
-        "name": "swap_course",
-        "description": "Swap a customer's purchased course for a different course",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "customer_email": {"type": "string", "description": "Customer's email address"},
-                "current_course_id": {"type": "string", "description": "Course ID they currently have"},
-                "new_course_id": {"type": "string", "description": "Course ID they want instead"}
-            },
-            "required": ["customer_email", "current_course_id", "new_course_id"]
-        }
-    },
-    {
-        "name": "resend_confirmation_email",
-        "description": "Resend the purchase/enrollment confirmation email to the customer",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "customer_email": {"type": "string", "description": "Customer's email address"},
-                "order_id": {"type": "string", "description": "The order ID for which to resend confirmation"}
-            },
-            "required": ["customer_email", "order_id"]
-        }
-    },
-    {
-        "name": "create_bug_ticket",
-        "description": "Create a bug ticket for a platform issue",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "title": {"type": "string", "description": "Short title for the bug"},
-                "description": {"type": "string", "description": "Detailed description of the bug"},
-                "reported_by": {"type": "string", "description": "Customer's email address"},
-                "severity": {"type": "string", "enum": ["low", "medium", "high"], "description": "Bug severity level"}
-            },
-            "required": ["title", "description", "reported_by", "severity"]
-        }
-    },
-    {
-        "name": "create_content_issue_ticket",
-        "description": "Create a ticket for a content problem in a course",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "course_id": {"type": "string", "description": "The course ID with the content issue"},
-                "lesson_id": {"type": "string", "description": "The specific lesson or module ID with the issue"},
-                "issue_type": {"type": "string", "enum": ["stale_content", "no_audio", "no_video", "broken_link", "other"], "description": "Type of content issue"},
-                "description": {"type": "string", "description": "Description of the content problem"},
-                "reported_by": {"type": "string", "description": "Customer's email address"}
-            },
-            "required": ["course_id", "issue_type", "description", "reported_by"]
-        }
-    },
-    {
-        "name": "route_business_development",
-        "description": "Route a business development or partnership inquiry to the BD team",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "contact_name": {"type": "string", "description": "Name of the person reaching out"},
-                "contact_email": {"type": "string", "description": "Email of the person reaching out"},
-                "company": {"type": "string", "description": "Their company name"},
-                "inquiry_summary": {"type": "string", "description": "Summary of the BD opportunity or inquiry"}
-            },
-            "required": ["contact_email", "inquiry_summary"]
-        }
-    },
-    {
-        "name": "process_gdpr_request",
-        "description": "Process a GDPR data deletion or data export request",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "customer_email": {"type": "string", "description": "Customer's email address"},
-                "request_type": {"type": "string", "enum": ["deletion", "export"], "description": "Type of GDPR request"},
-                "notes": {"type": "string", "description": "Any additional notes about the request"}
-            },
-            "required": ["customer_email", "request_type"]
-        }
-    },
-    {
-        "name": "escalate_to_human",
-        "description": "Escalate this conversation to a human support agent. Use when the customer requests a human, the issue is beyond your capabilities, or the customer is extremely frustrated.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "reason": {"type": "string", "description": "Why this conversation is being escalated"},
-                "summary": {"type": "string", "description": "Brief summary of the issue and what has been attempted so far"},
-                "priority": {"type": "string", "enum": ["low", "normal", "high", "urgent"], "description": "Priority level for the human agent"}
-            },
-            "required": ["reason", "summary", "priority"]
-        }
-    }
-]
 
+def make_tools(ctx: SessionContext):
+    @beta_tool
+    def issue_refund(customer_email: str, order_id: str, reason: str) -> str:
+        """Issue a refund for a course purchase.
 
-def handle_tool_call(tool_name: str, tool_input: dict, ctx: SessionContext) -> str:
-    if tool_name == "issue_refund":
-        return f"[MOCK] Refund of course purchase issued successfully for order {tool_input['order_id']} to {tool_input['customer_email']}. Refund will appear within 5-10 business days."
+        Args:
+            customer_email: Customer's email address
+            order_id: The order ID to refund
+            reason: Reason for the refund
+        """
+        return f"[MOCK] Refund of course purchase issued successfully for order {order_id} to {customer_email}. Refund will appear within 5-10 business days."
 
-    elif tool_name == "swap_course":
-        return f"[MOCK] Course swap completed. {tool_input['customer_email']} has been moved from course {tool_input['current_course_id']} to course {tool_input['new_course_id']}. Enrollment confirmation sent."
+    @beta_tool
+    def swap_course(customer_email: str, current_course_id: str, new_course_id: str) -> str:
+        """Swap a customer's purchased course for a different course.
 
-    elif tool_name == "resend_confirmation_email":
-        return f"[MOCK] Confirmation email for order {tool_input['order_id']} resent to {tool_input['customer_email']}."
+        Args:
+            customer_email: Customer's email address
+            current_course_id: Course ID they currently have
+            new_course_id: Course ID they want instead
+        """
+        return f"[MOCK] Course swap completed. {customer_email} has been moved from course {current_course_id} to course {new_course_id}. Enrollment confirmation sent."
 
-    elif tool_name == "create_bug_ticket":
-        ticket_id = "BUG-" + str(abs(hash(tool_input['title'])))[:6]
-        return f"[MOCK] Bug ticket {ticket_id} created: '{tool_input['title']}' (severity: {tool_input['severity']}). Engineering team notified."
+    @beta_tool
+    def resend_confirmation_email(customer_email: str, order_id: str) -> str:
+        """Resend the purchase/enrollment confirmation email to the customer.
 
-    elif tool_name == "create_content_issue_ticket":
-        ticket_id = "CONTENT-" + str(abs(hash(tool_input['description'])))[:6]
-        return f"[MOCK] Content issue ticket {ticket_id} created for course {tool_input['course_id']} ({tool_input['issue_type']}). Content team notified."
+        Args:
+            customer_email: Customer's email address
+            order_id: The order ID for which to resend confirmation
+        """
+        return f"[MOCK] Confirmation email for order {order_id} resent to {customer_email}."
 
-    elif tool_name == "route_business_development":
-        return f"[MOCK] BD inquiry from {tool_input.get('contact_email')} forwarded to the business development team. They will follow up within 2 business days."
+    @beta_tool
+    def create_bug_ticket(
+        title: str,
+        description: str,
+        reported_by: str,
+        severity: Literal["low", "medium", "high"],
+    ) -> str:
+        """Create a bug ticket for a platform issue.
 
-    elif tool_name == "process_gdpr_request":
-        request_id = "GDPR-" + str(abs(hash(tool_input['customer_email'])))[:6]
-        return f"[MOCK] GDPR {tool_input['request_type']} request {request_id} submitted for {tool_input['customer_email']}. Will be processed within 30 days per regulations."
+        Args:
+            title: Short title for the bug
+            description: Detailed description of the bug
+            reported_by: Customer's email address
+            severity: Bug severity level
+        """
+        ticket_id = "BUG-" + str(abs(hash(title)))[:6]
+        return f"[MOCK] Bug ticket {ticket_id} created: '{title}' (severity: {severity}). Engineering team notified."
 
-    elif tool_name == "escalate_to_human":
+    @beta_tool
+    def create_content_issue_ticket(
+        course_id: str,
+        issue_type: Literal["stale_content", "no_audio", "no_video", "broken_link", "other"],
+        description: str,
+        reported_by: str,
+        lesson_id: str = "",
+    ) -> str:
+        """Create a ticket for a content problem in a course.
+
+        Args:
+            course_id: The course ID with the content issue
+            issue_type: Type of content issue
+            description: Description of the content problem
+            reported_by: Customer's email address
+            lesson_id: The specific lesson or module ID with the issue
+        """
+        ticket_id = "CONTENT-" + str(abs(hash(description)))[:6]
+        return f"[MOCK] Content issue ticket {ticket_id} created for course {course_id} ({issue_type}). Content team notified."
+
+    @beta_tool
+    def route_business_development(
+        contact_email: str,
+        inquiry_summary: str,
+        contact_name: str = "",
+        company: str = "",
+    ) -> str:
+        """Route a business development or partnership inquiry to the BD team.
+
+        Args:
+            contact_email: Email of the person reaching out
+            inquiry_summary: Summary of the BD opportunity or inquiry
+            contact_name: Name of the person reaching out
+            company: Their company name
+        """
+        return f"[MOCK] BD inquiry from {contact_email} forwarded to the business development team. They will follow up within 2 business days."
+
+    @beta_tool
+    def process_gdpr_request(
+        customer_email: str,
+        request_type: Literal["deletion", "export"],
+        notes: str = "",
+    ) -> str:
+        """Process a GDPR data deletion or data export request.
+
+        Args:
+            customer_email: Customer's email address
+            request_type: Type of GDPR request
+            notes: Any additional notes about the request
+        """
+        request_id = "GDPR-" + str(abs(hash(customer_email)))[:6]
+        return f"[MOCK] GDPR {request_type} request {request_id} submitted for {customer_email}. Will be processed within 30 days per regulations."
+
+    @beta_tool
+    def escalate_to_human(
+        reason: str,
+        summary: str,
+        priority: Literal["low", "normal", "high", "urgent"],
+    ) -> str:
+        """Escalate this conversation to a human support agent.
+
+        Use when the customer requests a human, the issue is beyond your capabilities,
+        or the customer is extremely frustrated.
+
+        Args:
+            reason: Why this conversation is being escalated
+            summary: Brief summary of the issue and what has been attempted so far
+            priority: Priority level for the human agent
+        """
         ctx.state = EscalationState.ESCALATION_TRIGGERED
-        ctx.escalation_reason = tool_input["reason"]
-        ticket_id = "ESC-" + str(abs(hash(tool_input["summary"])))[:6]
+        ctx.escalation_reason = reason
+        ticket_id = "ESC-" + str(abs(hash(summary)))[:6]
         return (
-            f"[MOCK] Escalation ticket {ticket_id} created (priority: {tool_input['priority']}). "
-            f"A human agent will be assigned shortly. Reason: {tool_input['reason']}"
+            f"[MOCK] Escalation ticket {ticket_id} created (priority: {priority}). "
+            f"A human agent will be assigned shortly. Reason: {reason}"
         )
 
-    return f"[MOCK] Tool '{tool_name}' executed with input: {tool_input}"
+    return [
+        issue_refund,
+        swap_course,
+        resend_confirmation_email,
+        create_bug_ticket,
+        create_content_issue_ticket,
+        route_business_development,
+        process_gdpr_request,
+        escalate_to_human,
+    ]
 
 
 def run_turn(ctx: SessionContext, customer_message: str) -> bool:
@@ -285,60 +280,30 @@ def run_turn(ctx: SessionContext, customer_message: str) -> bool:
         _handle_handoff(ctx)
         return False
 
-    print("Agent: ", end="", flush=True)
     ctx.messages.append({"role": "user", "content": customer_message})
 
-    while True:
-        response = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=4096,
-            system=SYSTEM_PROMPT,
-            tools=TOOLS,
-            messages=ctx.messages,
-        )
+    print("Agent: ", end="", flush=True)
 
-        for block in response.content:
+    tools = make_tools(ctx)
+    runner = client.beta.messages.tool_runner(
+        model="claude-haiku-4-5-20251001",
+        max_tokens=4096,
+        system=SYSTEM_PROMPT,
+        tools=tools,
+        messages=ctx.messages,
+    )
+
+    final_message = None
+    for message in runner:
+        for block in message.content:
             if hasattr(block, "text"):
                 print(block.text, end="", flush=True)
-
-        if response.stop_reason == "end_turn":
-            ctx.messages.append({"role": "assistant", "content": response.content})
-            break
-
-        tool_use_blocks = [b for b in response.content if b.type == "tool_use"]
-        if not tool_use_blocks:
-            ctx.messages.append({"role": "assistant", "content": response.content})
-            break
-
-        ctx.messages.append({"role": "assistant", "content": response.content})
-
-        tool_results = []
-        for tool in tool_use_blocks:
-            result = handle_tool_call(tool.name, tool.input, ctx)
-            tool_results.append({
-                "type": "tool_result",
-                "tool_use_id": tool.id,
-                "content": result,
-            })
-
-        ctx.messages.append({"role": "user", "content": tool_results})
-
-        # If escalation was triggered during tool handling, let the model respond then exit
-        if ctx.state == EscalationState.ESCALATION_TRIGGERED:
-            response = client.messages.create(
-                model="claude-haiku-4-5-20251001",
-                max_tokens=512,
-                system=SYSTEM_PROMPT,
-                tools=TOOLS,
-                messages=ctx.messages,
-            )
-            for block in response.content:
-                if hasattr(block, "text"):
-                    print(block.text, end="", flush=True)
-            ctx.messages.append({"role": "assistant", "content": response.content})
-            break
+        final_message = message
 
     print("\n")
+
+    if final_message is not None:
+        ctx.messages.append({"role": "assistant", "content": final_message.content})
 
     if ctx.state == EscalationState.ESCALATION_TRIGGERED:
         _handle_handoff(ctx)
