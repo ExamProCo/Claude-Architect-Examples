@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "t-0001",
+      "kind": "explore",
+      "question": "What are the major late-1970s and 1980s Japanese supernatural/psychic school films similar to \"School in the Crosshairs\" (Nerawareta Gakuen, 1981)?",
+      "status": "complete",
+      "started_at": "2026-04-19T02:29:47Z",
+      "finished_at": "2026-04-18T00:00:00Z",
+      "artifact": "FINDINGS/t-0001-japanese-supernatural-schools.md",
+      "inputs": [],
+      "notes": "Verified 3 thematic/stylistic findings across Nobuhiko Obayashi's filmography (House, The Girl Who Leapt Through Time, and characteristic narrative patterns). Search results did not yield additional verified Japanese supernatural school films from 1975\u20131985 with sufficient external documentation. See Open Follow-ups in artifact for candidates dropped."
+    },
+    {
+      "id": "t-0002",
+      "kind": "synthesize",
+      "question": "Synthesize Japanese supernatural/psychic school films from 1970s-1980s similar to \"School in the Crosshairs\" into structured format with claim-source mappings",
+      "status": "running",
+      "started_at": "2026-04-19T02:31:47Z",
+      "finished_at": null,
+      "artifact": null,
+      "inputs": [
+        "FINDINGS/t-0001-japanese-supernatural-schools.md"
+      ],
+      "notes": ""
+    }
+  ]
+}
