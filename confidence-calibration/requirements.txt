@@ -1,0 +1,4 @@
+anthropic>=0.40.0
+datasets
+python-dotenv
+rich
